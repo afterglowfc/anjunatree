@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-17T07:18:40.288Z",
+ "generatedAt": "2026-08-31T13:55:47.557Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -37,7 +37,7 @@
   },
   {
    "id": "02dc7edf-9d90-45cb-8a9c-d03d16e687de",
-   "title": "Volume One (Remixes)",
+   "title": "Volume One",
    "artist": "Anjunabeats",
    "artistIds": [
     "d814810f-6586-4515-a7ee-6a3ae9f345bf"
@@ -48,9 +48,28 @@
    "label": "anjunabeats",
    "date": "2000-05-15",
    "year": 2000,
-   "catno": "ANJ-003",
+   "catno": "ANJ-001",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "328d2cd6-5e13-4d87-8466-5ee5f6818f4a",
+   "title": "Volume One (Remixes)",
+   "artist": "Anjunabeats",
+   "artistIds": [
+    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+   ],
+   "artists": [
+    "Anjunabeats"
+   ],
+   "label": "anjunabeats",
+   "date": "2001",
+   "year": 2001,
+   "catno": "ANJ-003",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "79dbe813-b756-3f9f-ad4e-23a183ac1723",
@@ -806,6 +825,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "f36edfa0-59bb-4289-a520-a4473221be32",
+   "title": "Slider",
+   "artist": "Adam Nickey",
+   "artistIds": [
+    "a13a47ff-d58f-4055-b0a8-ddc93c0d010d"
+   ],
+   "artists": [
+    "Adam Nickey"
+   ],
+   "label": "anjunabeats",
+   "date": "2005",
+   "year": 2005,
+   "catno": "ANJ126D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "8b5c4a76-8b00-4184-aeee-cf4af9500cc5",
    "title": "Unforgiven",
    "artist": "DJ Tab",
@@ -873,7 +909,9 @@
    "year": 2005,
    "catno": null,
    "type": "Single",
-   "secondaryTypes": []
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "606f3c22-b186-4f8a-b5a5-9cdf23deb1e8",
@@ -2381,7 +2419,9 @@
    "year": 2007,
    "catno": null,
    "type": "EP",
-   "secondaryTypes": []
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "37e0cd9c-1da2-4d65-9d3c-787fe1577826",
@@ -3557,23 +3597,6 @@
    "date": "2009-01-26",
    "year": 2009,
    "catno": "ANJ123D",
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
-   "id": "f36edfa0-59bb-4289-a520-a4473221be32",
-   "title": "Slider",
-   "artist": "Adam Nickey",
-   "artistIds": [
-    "a13a47ff-d58f-4055-b0a8-ddc93c0d010d"
-   ],
-   "artists": [
-    "Adam Nickey"
-   ],
-   "label": "anjunabeats",
-   "date": "2009-02-09",
-   "year": 2009,
-   "catno": "ANJ126D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -10168,6 +10191,28 @@
    "secondaryTypes": []
   },
   {
+   "id": "ae0dc57a-3b88-458d-8c1c-557c0b586ee2",
+   "title": "Anjunadeep 05",
+   "artist": "Jody Wisternoff & James Grant",
+   "artistIds": [
+    "deebf442-6911-402b-9b7d-f19abae2fa2e",
+    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
+   ],
+   "artists": [
+    "Jody Wisternoff",
+    "James Grant"
+   ],
+   "label": "anjunabeats",
+   "date": "2013-05-20",
+   "year": 2013,
+   "catno": "ANJCD035D",
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "a1835991-f320-4e53-ac8b-de14940279a3",
    "title": "Pink Skye",
    "artist": "Ronski Speed & Syntrobic feat. Renee Stahl",
@@ -10499,28 +10544,6 @@
    "type": "EP",
    "secondaryTypes": [
     "Compilation"
-   ]
-  },
-  {
-   "id": "ae0dc57a-3b88-458d-8c1c-557c0b586ee2",
-   "title": "Anjunadeep 05",
-   "artist": "Jody Wisternoff & James Grant",
-   "artistIds": [
-    "deebf442-6911-402b-9b7d-f19abae2fa2e",
-    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
-   ],
-   "artists": [
-    "Jody Wisternoff",
-    "James Grant"
-   ],
-   "label": "anjunabeats",
-   "date": "2013-07-22",
-   "year": 2013,
-   "catno": "ANJCD035D",
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation",
-    "DJ-mix"
    ]
   },
   {
@@ -11227,7 +11250,7 @@
    "label": "anjunadeep",
    "date": "2014-02",
    "year": 2014,
-   "catno": "ANJDEE183",
+   "catno": "ANJDEE183RD",
    "type": "Single",
    "secondaryTypes": [
     "Remix"
@@ -15002,23 +15025,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "77fd9e6e-299b-465b-813e-c6791bb9c070",
-   "title": "Anjunadeep Explorations 01",
-   "artist": "Anjunadeep",
-   "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2016-01-29",
-   "year": 2016,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "c1ff33c3-1271-4d64-ba32-cd63a1619c25",
    "title": "A.I.",
    "artist": "Above & Beyond",
@@ -15387,6 +15393,25 @@
    "catno": "ANJDEE257D",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "2777cfd7-6f8b-4f3a-b352-4b9496cb6c5e",
+   "title": "Group Therapy 174",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2016-03-25",
+   "year": 2016,
+   "catno": "ABGT174",
+   "type": "Other",
+   "secondaryTypes": [
+    "Compilation"
+   ]
   },
   {
    "id": "b0aa3a4b-7439-4b04-aea4-33db39b3671a",
@@ -18425,7 +18450,7 @@
   {
    "id": "f907aefb-fc6c-4e9a-8432-58bf24ab227b",
    "title": "My Own Hymn",
-   "artist": "Above & Beyond & Zoë Johnston",
+   "artist": "Above & Beyond feat. Zoë Johnston",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
     "5509e5eb-67a4-49e9-992a-07d895500deb"
@@ -18437,9 +18462,28 @@
    "label": "anjunabeats",
    "date": "2017-09-08",
    "year": 2017,
-   "catno": "ANJ450RBD",
+   "catno": "ANJ450D",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "2cab3402-5668-48b7-b7a1-42551a0b3aac",
+   "title": "Journey to ABGT250",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2017-09-12",
+   "year": 2017,
+   "catno": "JTABGT250",
+   "type": "Album",
+   "secondaryTypes": [
+    "DJ-mix"
+   ]
   },
   {
    "id": "2d909cd0-2850-4daf-9b25-316103d8c33f",
@@ -18509,7 +18553,7 @@
    "label": "anjunabeats",
    "date": "2017-09-21",
    "year": 2017,
-   "catno": null,
+   "catno": "ABGT250",
    "type": "Broadcast",
    "secondaryTypes": [
     "Live",
@@ -18728,7 +18772,7 @@
    "label": "anjunabeats",
    "date": "2017-10-27",
    "year": 2017,
-   "catno": "ANJ458BD",
+   "catno": "ANJ458D",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -19346,8 +19390,8 @@
   },
   {
    "id": "7d8b6de2-8dda-4f93-a64f-279b469bab28",
-   "title": "Always (Slander and Luttrell Mixes)",
-   "artist": "Above & Beyond feat. Zoe Johnston",
+   "title": "Always",
+   "artist": "Above & Beyond feat. Zoë Johnston",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
     "5509e5eb-67a4-49e9-992a-07d895500deb"
@@ -19359,7 +19403,7 @@
    "label": "anjunabeats",
    "date": "2018-01-19",
    "year": 2018,
-   "catno": "ANJ468RD",
+   "catno": "ANJ468D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -21621,7 +21665,7 @@
    "label": "anjunabeats",
    "date": "2018-08-19",
    "year": 2018,
-   "catno": null,
+   "catno": "ABGT296",
    "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
@@ -21943,7 +21987,7 @@
    "label": "anjunabeats",
    "date": "2018-09-23",
    "year": 2018,
-   "catno": null,
+   "catno": "ABGT300JD",
    "type": "Album",
    "secondaryTypes": [
     "DJ-mix"
@@ -22058,14 +22102,12 @@
   {
    "id": "c2367e9d-939b-469f-b35b-17847218ec55",
    "title": "Group Therapy 300 Live from Hong Kong - Deep Set",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2018-10-06",
@@ -22507,7 +22549,7 @@
    "label": "anjunabeats",
    "date": "2018-12-02",
    "year": 2018,
-   "catno": null,
+   "catno": "ABGT309",
    "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
@@ -23986,12 +24028,12 @@
   {
    "id": "55abe2c7-497a-440b-aad4-34e3d62e247b",
    "title": "Anjunabeats in Ibiza 2019",
-   "artist": "Anjunabeats",
+   "artist": "Various Artists",
    "artistIds": [
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "89ad4ac3-39f7-470e-963a-56509c546377"
    ],
    "artists": [
-    "Anjunabeats"
+    "Various Artists"
    ],
    "label": "anjunabeats",
    "date": "2019-06-24",
@@ -25000,14 +25042,12 @@
   {
    "id": "9733d6eb-0bbe-4577-b55f-aa835e0f50f5",
    "title": "Group Therapy 350 Live from Prague - Deep Set",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2019-10-12",
@@ -25212,29 +25252,6 @@
     "Compilation",
     "DJ-mix"
    ]
-  },
-  {
-   "id": "43bf067e-7921-40a9-ac72-b747380de117",
-   "title": "Anjunadeep Explorations 12",
-   "artist": "The Dualz, GRAZZE, minds&machines & Frost",
-   "artistIds": [
-    "62bd5e31-7cd8-4c3d-a8e0-326b372f8330",
-    "eab02d57-c0cd-441d-adeb-47f999465329",
-    "1b0f8e37-1a49-46e8-be13-abdb1b3b89a8",
-    "036eba41-b272-4b40-b68d-be69fd029cb0"
-   ],
-   "artists": [
-    "The Dualz",
-    "GRAZZE",
-    "minds&machines",
-    "Frost"
-   ],
-   "label": "anjunadeep",
-   "date": "2019-10-22",
-   "year": 2019,
-   "catno": "ANJDEE441BD",
-   "type": "EP",
-   "secondaryTypes": []
   },
   {
    "id": "96b26fb1-da17-4e89-bd8a-1b3ded0e4512",
@@ -26270,14 +26287,12 @@
   {
    "id": "a83f0acd-cfad-413e-988f-1ca3382545e4",
    "title": "Group Therapy 367",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-02-09",
@@ -26492,14 +26507,12 @@
   {
    "id": "bdfa0b64-47c7-4467-8418-cf9cd02e84eb",
    "title": "Group Therapy 369",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-02-23",
@@ -27165,14 +27178,12 @@
   {
    "id": "32aa6838-70ee-4506-8b9d-ae985a0ac42c",
    "title": "Group Therapy 376",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-04-12",
@@ -27306,14 +27317,12 @@
   {
    "id": "86e64bea-9ed5-4225-a5f0-bf22bdb19821",
    "title": "The Anjunadeep Edition 300",
-   "artist": "James Grant & Anjunadeep",
+   "artist": "James Grant",
    "artistIds": [
-    "7a837972-4fee-4e33-adec-1dc17c4b2c5a",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
    ],
    "artists": [
-    "James Grant",
-    "Anjunadeep"
+    "James Grant"
    ],
    "label": "anjunadeep",
    "date": "2020-04-23",
@@ -28171,14 +28180,12 @@
   {
    "id": "59a12b5b-cda7-47e1-b807-590286ead195",
    "title": "The Anjunadeep Edition 308",
-   "artist": "James Grant & Anjunadeep",
+   "artist": "James Grant",
    "artistIds": [
-    "7a837972-4fee-4e33-adec-1dc17c4b2c5a",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
    ],
    "artists": [
-    "James Grant",
-    "Anjunadeep"
+    "James Grant"
    ],
    "label": "anjunadeep",
    "date": "2020-06-25",
@@ -28209,14 +28216,12 @@
   {
    "id": "55c252ab-48d5-45a4-9017-e56dabfa8dca",
    "title": "Group Therapy 387",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-06-28",
@@ -28300,14 +28305,12 @@
   {
    "id": "ba0c6660-9529-47be-813e-c7d6ae00bc7a",
    "title": "Group Therapy 388",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-07-05",
@@ -28608,13 +28611,11 @@
   {
    "id": "5329c3a7-9749-4721-8370-f49f82adf9d6",
    "title": "Group Therapy 391",
-   "artist": "Anjunabeats & Above & Beyond",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf",
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Anjunabeats",
     "Above & Beyond"
    ],
    "label": "anjunabeats",
@@ -29155,14 +29156,12 @@
   {
    "id": "dcf3467c-c7f8-44b2-95f8-3e6fe8bf069c",
    "title": "Group Therapy 396",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-08-30",
@@ -29777,7 +29776,7 @@
    "label": "anjunabeats",
    "date": "2020-09-29",
    "year": 2020,
-   "catno": null,
+   "catno": "ABGT400",
    "type": "Album",
    "secondaryTypes": [
     "Live",
@@ -30217,14 +30216,12 @@
   {
    "id": "b70c0445-47b1-4d4b-84e4-1ea1e2980af7",
    "title": "Group Therapy 404",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-10-25",
@@ -30314,14 +30311,12 @@
   {
    "id": "30c926b0-b571-4529-b5d8-9743731c7628",
    "title": "Group Therapy 405",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2020-11-01",
@@ -30453,7 +30448,7 @@
    "label": "anjunabeats",
    "date": "2020-11-08",
    "year": 2020,
-   "catno": null,
+   "catno": "ABGT406",
    "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
@@ -30715,48 +30710,6 @@
    "year": 2020,
    "catno": "ANJDEE543BD",
    "type": "EP",
-   "secondaryTypes": []
-  },
-  {
-   "id": "13091560-2b12-4fda-8952-8b47bc78df86",
-   "title": "Anjunadeep Explorations 15",
-   "artist": "OCULA, Nōpi & Igor Garanin",
-   "artistIds": [
-    "25b4fee8-0f1c-416e-becd-54b2a0825b39",
-    "11172bed-62e6-4a35-8c5f-7d767b8838d3",
-    "fda97a03-c05a-4a33-b8f5-299c38794764"
-   ],
-   "artists": [
-    "OCULA",
-    "Nōpi",
-    "Igor Garanin"
-   ],
-   "label": "anjunadeep",
-   "date": "2020-11-25",
-   "year": 2020,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
-   "id": "5b71291c-1470-4e2f-ac05-d4bd812aec3a",
-   "title": "Anjunadeep Explorations 15",
-   "artist": "OCULA, Nōpi & Igor Garanin",
-   "artistIds": [
-    "25b4fee8-0f1c-416e-becd-54b2a0825b39",
-    "11172bed-62e6-4a35-8c5f-7d767b8838d3",
-    "fda97a03-c05a-4a33-b8f5-299c38794764"
-   ],
-   "artists": [
-    "OCULA",
-    "Nōpi",
-    "Igor Garanin"
-   ],
-   "label": "anjunadeep",
-   "date": "2020-11-25",
-   "year": 2020,
-   "catno": null,
-   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -31108,7 +31061,7 @@
   },
   {
    "id": "aa012cf8-0e74-49ce-80ae-4f36923703e7",
-   "title": "Crockett’s Theme (Jody Wisternoff Remix)",
+   "title": "Crockett’s Theme (Jody Wisternoff remix)",
    "artist": "Michael Cassette & Jody Wisternoff",
    "artistIds": [
     "b9d537a1-a655-4c71-8466-0a65d69dc012",
@@ -31435,23 +31388,6 @@
    "year": 2021,
    "catno": "ANJDEE555D",
    "type": "EP",
-   "secondaryTypes": []
-  },
-  {
-   "id": "e94009a5-f9e1-4983-a46b-aa85e0cb5a99",
-   "title": "Anjunadeep Explorations 16",
-   "artist": "Anjunadeep",
-   "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2021-01-18",
-   "year": 2021,
-   "catno": null,
-   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -32037,14 +31973,12 @@
   {
    "id": "ed77f807-3fe8-4080-9afb-c651b5801973",
    "title": "Group Therapy 422",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-02-28",
@@ -32327,7 +32261,7 @@
    "label": "anjunabeats",
    "date": "2021-03-19",
    "year": 2021,
-   "catno": "ANJ692BD",
+   "catno": "ANJ692D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -32620,27 +32554,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "45f46aa4-61e9-4e85-909a-814105c65183",
-   "title": "Anjunadeep Explorations 17",
-   "artist": "Sebastian Sellares, Rigooni & Anjunadeep",
-   "artistIds": [
-    "bea69ce2-2e7a-4262-8fd3-bf24c2c3b63c",
-    "555a0d60-7dea-46e8-bf26-e61070296791",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Sebastian Sellares",
-    "Rigooni",
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2021-04-07",
-   "year": 2021,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "b3a925d3-90a9-450b-a835-9e158a6d8691",
    "title": "Bimini Road (Live)",
    "artist": "Moon Boots",
@@ -32751,7 +32664,7 @@
    ]
   },
   {
-   "id": "ee23a5fa-d895-41f0-8c28-9c21f2f59246",
+   "id": "2544c29b-14e2-4477-af13-b413fbd88327",
    "title": "The Anjunadeep Edition 345",
    "artist": "James Grant",
    "artistIds": [
@@ -32770,7 +32683,7 @@
    ]
   },
   {
-   "id": "2544c29b-14e2-4477-af13-b413fbd88327",
+   "id": "ee23a5fa-d895-41f0-8c28-9c21f2f59246",
    "title": "The Anjunadeep Edition 345",
    "artist": "James Grant",
    "artistIds": [
@@ -33483,14 +33396,12 @@
   {
    "id": "236f051a-4288-4271-851f-6988f8912153",
    "title": "Group Therapy 435",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-05-30",
@@ -33516,27 +33427,6 @@
    "year": 2021,
    "catno": "ANJDEE596D",
    "type": "EP",
-   "secondaryTypes": []
-  },
-  {
-   "id": "56ee7fd3-25d2-4608-88f1-73d9745fb962",
-   "title": "Anjunadeep Explorations 18",
-   "artist": "Nacho Varela, Cruz Vittor & Anjunadeep",
-   "artistIds": [
-    "129fef2e-e284-4790-b410-438d1ac768cb",
-    "afc80ef0-a77f-4ba7-b8ed-6b8a9b3ece12",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Nacho Varela",
-    "Cruz Vittor",
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2021-06-01",
-   "year": 2021,
-   "catno": null,
-   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -34356,14 +34246,12 @@
   {
    "id": "7db31e58-83ef-41c1-ad53-cdbb6ef4ad88",
    "title": "Group Therapy 443",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-07-25",
@@ -35104,14 +34992,12 @@
   {
    "id": "fdb60cbb-4eaf-46b6-9b65-fb4c359a1b09",
    "title": "Group Therapy 450 Live from London",
-   "artist": "Above & Beyond, Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-09-09",
@@ -35459,6 +35345,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "53f7e398-25f5-4f65-9e01-07072cb60b3c",
+   "title": "The Anjunabeats Rising Residency with Amy Wiles #3",
+   "artist": "Amy Wiles & Anjunabeats",
+   "artistIds": [
+    "cd117c8e-5632-45a5-a150-e5c9076fc18a"
+   ],
+   "artists": [
+    "Amy Wiles"
+   ],
+   "label": "anjunabeats",
+   "date": "2021-10-05",
+   "year": 2021,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": []
+  },
+  {
    "id": "b422a253-f7c1-4dc2-936e-1af41e877890",
    "title": "Hope in Balance",
    "artist": "São Miguel feat. Sebastian Reynoso",
@@ -35552,14 +35455,12 @@
   {
    "id": "81efdb8f-3997-47b7-a19d-c2eafcb7e377",
    "title": "Group Therapy 455",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-10-09",
@@ -35662,14 +35563,12 @@
   {
    "id": "6ed22239-e497-4839-8ad5-4f96d2288edc",
    "title": "Group Therapy 456",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-10-16",
@@ -35888,21 +35787,19 @@
    "label": "anjunadeep",
    "date": "2021-10-29",
    "year": 2021,
-   "catno": "ANJLP103",
+   "catno": "ANJCD103D",
    "type": "Album",
    "secondaryTypes": []
   },
   {
    "id": "a9b60bfd-464e-41fc-a80c-473055417db9",
    "title": "Group Therapy 458",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-10-30",
@@ -36022,14 +35919,12 @@
   {
    "id": "adb81076-4728-4ece-9f68-ee5be7c258a1",
    "title": "Group Therapy 459",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2021-11-06",
@@ -36642,14 +36537,12 @@
   {
    "id": "99fb7d62-2661-499d-8104-51a9986bdb95",
    "title": "Group Therapy 466",
-   "artist": "Above & Beyond & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunabeats",
    "date": "2022-01-08",
@@ -37391,7 +37284,7 @@
    "label": "anjunabeats",
    "date": "2022-03-05",
    "year": 2022,
-   "catno": null,
+   "catno": "ABGT474",
    "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
@@ -37612,6 +37505,25 @@
    "secondaryTypes": []
   },
   {
+   "id": "ad1c0494-f0ba-427f-915e-2ae79c533a26",
+   "title": "The Last Glaciers (Original Motion Picture Soundtrack)",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2022-03-22",
+   "year": 2022,
+   "catno": "ANJCD106BD",
+   "type": "Album",
+   "secondaryTypes": [
+    "Soundtrack"
+   ]
+  },
+  {
    "id": "b55eed48-b694-486e-859f-5adc6884ed5c",
    "title": "Depend on Your Love",
    "artist": "Just Her",
@@ -37627,25 +37539,6 @@
    "catno": "ANJDEE679D",
    "type": "EP",
    "secondaryTypes": []
-  },
-  {
-   "id": "ad1c0494-f0ba-427f-915e-2ae79c533a26",
-   "title": "The Last Glaciers (Original Motion Picture Soundtrack)",
-   "artist": "Above & Beyond",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
-   ],
-   "artists": [
-    "Above & Beyond"
-   ],
-   "label": "anjunabeats",
-   "date": "2022-03-22",
-   "year": 2022,
-   "catno": "ANJCD106D",
-   "type": "Album",
-   "secondaryTypes": [
-    "Soundtrack"
-   ]
   },
   {
    "id": "3dd8aa80-12ed-44ba-a17c-f41deba34746",
@@ -38070,7 +37963,7 @@
    "label": "anjunabeats",
    "date": "2022-04-23",
    "year": 2022,
-   "catno": null,
+   "catno": "ABGT480",
    "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
@@ -40409,25 +40302,6 @@
    ]
   },
   {
-   "id": "5ab9db8a-5b79-4bf6-aec6-4fc7fdb4e29f",
-   "title": "10 Years of Group Therapy (Part 2)",
-   "artist": "Above & Beyond",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
-   ],
-   "artists": [
-    "Above & Beyond"
-   ],
-   "label": "anjunabeats",
-   "date": "2022-10-13",
-   "year": 2022,
-   "catno": "ANJLP109BD1",
-   "type": "Album",
-   "secondaryTypes": [
-    "Remix"
-   ]
-  },
-  {
    "id": "353c7ca9-5137-4877-9b65-c94216ed4475",
    "title": "Giving It Out (Etherwood remix)",
    "artist": "Above & Beyond feat. Zoë Johnston",
@@ -40444,6 +40318,25 @@
    "year": 2022,
    "catno": null,
    "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
+   "id": "5ab9db8a-5b79-4bf6-aec6-4fc7fdb4e29f",
+   "title": "10 Years of Group Therapy (Part 2)",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2022-10-13",
+   "year": 2022,
+   "catno": "ANJLP109BD1",
+   "type": "Album",
    "secondaryTypes": [
     "Remix"
    ]
@@ -40679,27 +40572,6 @@
    "year": 2022,
    "catno": null,
    "type": "EP",
-   "secondaryTypes": []
-  },
-  {
-   "id": "c2bd5e1a-c27b-42f8-ae72-b177078a4024",
-   "title": "Anjunadeep Explorations 21: Curated by Tony McGuinness",
-   "artist": "Rigooni, Integral Bread & Mauro Augugliaro",
-   "artistIds": [
-    "555a0d60-7dea-46e8-bf26-e61070296791",
-    "aa587e2a-f4ca-4188-a916-b7c4533f0277",
-    "f36b7b4a-9479-40cd-ab08-354614283c05"
-   ],
-   "artists": [
-    "Rigooni",
-    "Integral Bread",
-    "Mauro Augugliaro"
-   ],
-   "label": "anjunadeep",
-   "date": "2022-11-04",
-   "year": 2022,
-   "catno": null,
-   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -42395,23 +42267,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "5c609762-3472-4783-81ef-26c24bcf93d7",
-   "title": "Anjunadeep 14 – The Selection",
-   "artist": "Various Artists",
-   "artistIds": [
-    "89ad4ac3-39f7-470e-963a-56509c546377"
-   ],
-   "artists": [
-    "Various Artists"
-   ],
-   "label": "anjunadeep",
-   "date": "2023-04-25",
-   "year": 2023,
-   "catno": "ANJDEE771D",
-   "type": "EP",
-   "secondaryTypes": []
-  },
-  {
    "id": "da466d99-a365-464b-9bf5-7bf63292ef3c",
    "title": "Anjunadeep 14 - The Selection",
    "artist": "Various Artists",
@@ -42426,6 +42281,23 @@
    "year": 2023,
    "catno": "ANJDEE771BD",
    "type": "Other",
+   "secondaryTypes": []
+  },
+  {
+   "id": "5c609762-3472-4783-81ef-26c24bcf93d7",
+   "title": "Anjunadeep 14 – The Selection",
+   "artist": "Various Artists",
+   "artistIds": [
+    "89ad4ac3-39f7-470e-963a-56509c546377"
+   ],
+   "artists": [
+    "Various Artists"
+   ],
+   "label": "anjunadeep",
+   "date": "2023-04-25",
+   "year": 2023,
+   "catno": "ANJDEE771D",
+   "type": "EP",
    "secondaryTypes": []
   },
   {
@@ -43083,14 +42955,14 @@
    ]
   },
   {
-   "id": "d9b2fa25-9665-4f0d-b900-e0f44c427680",
-   "title": "Anjunadeep presents 'Progressive Gems' (DJ Mix)",
-   "artist": "Anjunadeep",
+   "id": "20189f53-2ec4-43e3-af83-32cbf970721e",
+   "title": "Anjunadeep presents 'Late Night Cuts'",
+   "artist": "Various Artists",
    "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "89ad4ac3-39f7-470e-963a-56509c546377"
    ],
    "artists": [
-    "Anjunadeep"
+    "Various Artists"
    ],
    "label": "anjunadeep",
    "date": "2023-07-07",
@@ -43102,14 +42974,14 @@
    ]
   },
   {
-   "id": "20189f53-2ec4-43e3-af83-32cbf970721e",
-   "title": "Anjunadeep presents 'Late Night Cuts' (DJ Mix)",
-   "artist": "Anjunadeep",
+   "id": "d9b2fa25-9665-4f0d-b900-e0f44c427680",
+   "title": "Anjunadeep presents 'Progressive Gems'",
+   "artist": "Various Artists",
    "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "89ad4ac3-39f7-470e-963a-56509c546377"
    ],
    "artists": [
-    "Anjunadeep"
+    "Various Artists"
    ],
    "label": "anjunadeep",
    "date": "2023-07-07",
@@ -43122,13 +42994,13 @@
   },
   {
    "id": "c1331742-7ee1-492f-8e8b-7d3c3dee5da3",
-   "title": "Anjunadeep presents 'Summer Grooves' (DJ Mix)",
-   "artist": "Anjunadeep",
+   "title": "Anjunadeep presents 'Summer Grooves'",
+   "artist": "Various Artists",
    "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "89ad4ac3-39f7-470e-963a-56509c546377"
    ],
    "artists": [
-    "Anjunadeep"
+    "Various Artists"
    ],
    "label": "anjunadeep",
    "date": "2023-07-07",
@@ -44674,23 +44546,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "dd545beb-8f01-43c4-9c04-70a48a751844",
-   "title": "Anjunadeep Explorations 25",
-   "artist": "Anjunadeep",
-   "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2023-12-12",
-   "year": 2023,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "50e2afc1-11dd-46cd-aa45-8a5064106831",
    "title": "Reimagined",
    "artist": "Marsh",
@@ -44874,7 +44729,7 @@
    "label": "anjunabeats",
    "date": "2024",
    "year": 2024,
-   "catno": null,
+   "catno": "ABGT500",
    "type": "Album",
    "secondaryTypes": [
     "Live"
@@ -47107,12 +46962,12 @@
   {
    "id": "9745d4b6-0e81-4e81-badf-ed02a4cfaf22",
    "title": "Anjunabeats presents After Dark 01",
-   "artist": "Anjunabeats",
+   "artist": "Various Artists",
    "artistIds": [
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "89ad4ac3-39f7-470e-963a-56509c546377"
    ],
    "artists": [
-    "Anjunabeats"
+    "Various Artists"
    ],
    "label": "anjunabeats",
    "date": "2024-08-27",
@@ -47221,7 +47076,7 @@
    "label": "anjunadeep",
    "date": "2024-09-04",
    "year": 2024,
-   "catno": null,
+   "catno": "ANJEXP008",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -47328,7 +47183,7 @@
    "label": "anjunadeep",
    "date": "2024-09-11",
    "year": 2024,
-   "catno": null,
+   "catno": "ANJEXP009",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -47571,16 +47426,12 @@
   {
    "id": "17daf73d-da28-4133-a6ca-0109fd09e728",
    "title": "Above & Beyond (Deep Set): Live from Open Air London 2024 (DJ Mix)",
-   "artist": "Above & Beyond, Anjunadeep & Anjunabeats",
+   "artist": "Above & Beyond",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c",
-    "d814810f-6586-4515-a7ee-6a3ae9f345bf"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
    ],
    "artists": [
-    "Above & Beyond",
-    "Anjunadeep",
-    "Anjunabeats"
+    "Above & Beyond"
    ],
    "label": "anjunadeep",
    "date": "2024-10-02",
@@ -47764,7 +47615,7 @@
    "label": "anjunadeep",
    "date": "2024-10-23",
    "year": 2024,
-   "catno": "ANJEXP015BD",
+   "catno": "ANJEXP015",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -48420,7 +48271,7 @@
    "label": "anjunadeep",
    "date": "2024-12-11",
    "year": 2024,
-   "catno": null,
+   "catno": "ANJEXP022",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -48677,7 +48528,7 @@
    "label": "anjunadeep",
    "date": "2025-01-22",
    "year": 2025,
-   "catno": null,
+   "catno": "ANJEXP022",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -48732,7 +48583,7 @@
    "label": "anjunadeep",
    "date": "2025-01-29",
    "year": 2025,
-   "catno": "ANJEXP024BD",
+   "catno": "ANJEXP024",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -48882,7 +48733,7 @@
    "label": "anjunadeep",
    "date": "2025-02-12",
    "year": 2025,
-   "catno": "ANJEXP026BD",
+   "catno": "ANJEXP026",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -49959,6 +49810,26 @@
    "secondaryTypes": []
   },
   {
+   "id": "4df6a80f-ca4c-431c-947d-0f8cd18b06ec",
+   "title": "25 Years of Anjuna Mixed by PROFF",
+   "artist": "PROFF",
+   "artistIds": [
+    "eec49075-8cfb-4b92-be6f-6b4eea812e03"
+   ],
+   "artists": [
+    "PROFF"
+   ],
+   "label": "anjunabeats",
+   "date": "2025-04-28",
+   "year": 2025,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "0904a0cc-6535-47e3-b6c7-00aa8028b9a8",
    "title": "Looking Up EP",
    "artist": "Toutounji",
@@ -50849,6 +50720,26 @@
    "secondaryTypes": []
   },
   {
+   "id": "29af7e8b-b5f4-483b-ac68-fcc73fc72523",
+   "title": "25 Years of Anjuna Mixed by Bart Claessen",
+   "artist": "Bart Claessen",
+   "artistIds": [
+    "2f7f295f-5acf-49ce-841b-5669fcef3daf"
+   ],
+   "artists": [
+    "Bart Claessen"
+   ],
+   "label": "anjunabeats",
+   "date": "2025-07-28",
+   "year": 2025,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "1369c042-d386-42da-84ab-ce7fd8eb9124",
    "title": "A Better Place EP",
    "artist": "Cornelius SA",
@@ -50885,25 +50776,6 @@
   {
    "id": "75dd1a82-c270-40de-992e-819f2bf02a47",
    "title": "Anjunadeep Explorations Vol. 1",
-   "artist": "Anjunadeep",
-   "artistIds": [
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
-   ],
-   "artists": [
-    "Anjunadeep"
-   ],
-   "label": "anjunadeep",
-   "date": "2025-07-30",
-   "year": 2025,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": [
-    "DJ-mix"
-   ]
-  },
-  {
-   "id": "07d29e83-2513-43f9-92df-fe077cdee45e",
-   "title": "Anjunadeep Explorations Vol. 1",
    "artist": "Various Artists",
    "artistIds": [
     "89ad4ac3-39f7-470e-963a-56509c546377"
@@ -50917,7 +50789,7 @@
    "catno": "ANJCDCO329OD",
    "type": "Album",
    "secondaryTypes": [
-    "Compilation"
+    "DJ-mix"
    ]
   },
   {
@@ -51150,6 +51022,26 @@
    "secondaryTypes": []
   },
   {
+   "id": "08139ced-69f9-438a-81df-eb3a6c468b02",
+   "title": "25 Years of Anjuna Mixed by SØNIN",
+   "artist": "SØNIN",
+   "artistIds": [
+    "67e5fdbb-1b40-4338-b67d-776f32d877b4"
+   ],
+   "artists": [
+    "SØNIN"
+   ],
+   "label": "anjunabeats",
+   "date": "2025-08-26",
+   "year": 2025,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "c80acdbf-e4ca-4389-b3c4-adaf934e6d48",
    "title": "No Horizons / Track II",
    "artist": "Braxton feat. Rromarin",
@@ -51188,19 +51080,19 @@
   {
    "id": "050826a7-e971-4894-b232-e7b69dbe8702",
    "title": "YNTOO / Olympic",
-   "artist": "Tom Middleton & Sienna",
+   "artist": "Sienna & Tom Middleton",
    "artistIds": [
-    "0799ced4-249a-4129-b5ea-5bc174b6007c",
-    "95d1de89-9f8e-48db-859e-ff0074127f8a"
+    "95d1de89-9f8e-48db-859e-ff0074127f8a",
+    "0799ced4-249a-4129-b5ea-5bc174b6007c"
    ],
    "artists": [
-    "Tom Middleton",
-    "Sienna"
+    "Sienna",
+    "Tom Middleton"
    ],
    "label": "anjunadeep",
    "date": "2025-08-27",
    "year": 2025,
-   "catno": "ANJEXP052BD",
+   "catno": "ANJEXP052",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -51480,6 +51372,26 @@
    "secondaryTypes": []
   },
   {
+   "id": "88b2b0cb-c018-4626-ad29-c23b5678b04b",
+   "title": "25 Years of Anjuna Mixed by Elevven",
+   "artist": "Elevven",
+   "artistIds": [
+    "fe250b23-6ba4-4371-b5c4-90154eac4782"
+   ],
+   "artists": [
+    "Elevven"
+   ],
+   "label": "anjunabeats",
+   "date": "2025-09-22",
+   "year": 2025,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "7cf8e24a-7ce4-411f-8190-c9eba737dc23",
    "title": "Home",
    "artist": "Noe Solange",
@@ -51722,7 +51634,7 @@
   },
   {
    "id": "78a2ecb6-bf80-47d6-ab0d-834362e7467e",
-   "title": "Only For A Moment (andhim Remix)",
+   "title": "Only for a Moment (andhim remix)",
    "artist": "Rezident feat. Ekko",
    "artistIds": [
     "62db9736-d677-4ab8-8aa9-59b51ab3b3f2",
@@ -51914,7 +51826,7 @@
    "label": "anjunadeep",
    "date": "2025-10-29",
    "year": 2025,
-   "catno": null,
+   "catno": "ANJEXP061BD",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -52042,7 +51954,9 @@
    "year": 2025,
    "catno": "ANJCD170BD",
    "type": "Album",
-   "secondaryTypes": []
+   "secondaryTypes": [
+    "Compilation"
+   ]
   },
   {
    "id": "2adb00bb-a386-4f9f-b8c9-fdb27d1e5422",
@@ -52702,7 +52616,10 @@
    "year": 2025,
    "catno": null,
    "type": "Album",
-   "secondaryTypes": []
+   "secondaryTypes": [
+    "Compilation",
+    "DJ-mix"
+   ]
   },
   {
    "id": "8bfa991e-2499-4da8-9343-bbd82a88667c",
@@ -53136,7 +53053,7 @@
    "label": "anjunadeep",
    "date": "2026-02-20",
    "year": 2026,
-   "catno": "ANJCD167",
+   "catno": "ANJCD167D",
    "type": "Album",
    "secondaryTypes": [
     "Compilation",
@@ -53247,6 +53164,23 @@
    "year": 2026,
    "catno": "ANJCH053D",
    "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "d8539328-a3d6-49c2-8bb8-e4bb4597a9fd",
+   "title": "Gertrude EP",
+   "artist": "Kasper Koman",
+   "artistIds": [
+    "a1fabf47-c257-4a90-b0c8-3123fe9d7265"
+   ],
+   "artists": [
+    "Kasper Koman"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-03-06",
+   "year": 2026,
+   "catno": null,
+   "type": "EP",
    "secondaryTypes": []
   },
   {
@@ -53431,7 +53365,7 @@
    "label": "anjunadeep",
    "date": "2026-03-20",
    "year": 2026,
-   "catno": null,
+   "catno": "ANJDEE971OD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -53525,6 +53459,27 @@
    "date": "2026-03-27",
    "year": 2026,
    "catno": "ANJDEE975D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "bb22a75c-2c05-4fda-958a-9009299aa71b",
+   "title": "Forgive Me",
+   "artist": "MARK ETESON, Echoes & After Eden",
+   "artistIds": [
+    "74815309-880e-4cc4-a9e6-dcab58e49db3",
+    "71f32cd6-1c31-427f-be75-1469ae60fe57",
+    "053c4e51-a60a-4429-9edc-4b7022f32d8a"
+   ],
+   "artists": [
+    "Mark Eteson",
+    "Echoes",
+    "After Eden"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-04-01",
+   "year": 2026,
+   "catno": null,
    "type": "Single",
    "secondaryTypes": []
   },
@@ -53971,7 +53926,7 @@
    "label": "anjunadeep",
    "date": "2026-05-06",
    "year": 2026,
-   "catno": null,
+   "catno": "ANJEXP086",
    "type": "EP",
    "secondaryTypes": []
   },
@@ -54499,6 +54454,25 @@
    "secondaryTypes": []
   },
   {
+   "id": "fd6ef04a-2e2c-4e18-9617-14db244ea8a5",
+   "title": "Anjunadeep Explorations Vol. 2",
+   "artist": "Various Artists",
+   "artistIds": [
+    "89ad4ac3-39f7-470e-963a-56509c546377"
+   ],
+   "artists": [
+    "Various Artists"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-07-16",
+   "year": 2026,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "Compilation"
+   ]
+  },
+  {
    "id": "ad36c9f1-ef31-4465-be84-286f1d4722f6",
    "title": "Kadhalan",
    "artist": "Dusky, Nadeem Karim & Pritt",
@@ -54567,6 +54541,27 @@
    "date": "2026-07-23",
    "year": 2026,
    "catno": "ANJCH070D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "589a2dda-4c9e-422e-bc52-99fc9e36ca1a",
+   "title": "Nomad",
+   "artist": "Feiertag, Jody Wisternoff & James Grant",
+   "artistIds": [
+    "d30e5ecc-913f-4748-9c0b-f2df9cc58db1",
+    "deebf442-6911-402b-9b7d-f19abae2fa2e",
+    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
+   ],
+   "artists": [
+    "Feiertag",
+    "Jody Wisternoff",
+    "James Grant"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-07-24",
+   "year": 2026,
+   "catno": null,
    "type": "Single",
    "secondaryTypes": []
   },
@@ -54769,6 +54764,40 @@
    ]
   },
   {
+   "id": "7ac4b843-9adc-47fe-a486-65993fdd70e1",
+   "title": "United",
+   "artist": "Michael Cassette",
+   "artistIds": [
+    "b9d537a1-a655-4c71-8466-0a65d69dc012"
+   ],
+   "artists": [
+    "Michael Cassette"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-08-17",
+   "year": 2026,
+   "catno": "ANJ1093D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "2e64789a-5611-4fd4-aad9-1763c3019bc6",
+   "title": "Passion 01",
+   "artist": "Dosem",
+   "artistIds": [
+    "fac67cfd-981b-4669-9bdd-8254e9c97053"
+   ],
+   "artists": [
+    "Dosem"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-08-18",
+   "year": 2026,
+   "catno": "ANJDEE1014D",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
    "id": "8e1ca840-62da-46c4-a4a7-0cf31a0da791",
    "title": "Wilderness (Braxton Revisit)",
    "artist": "Braxton",
@@ -54781,9 +54810,66 @@
    "label": "reflections",
    "date": "2026-08-20",
    "year": 2026,
-   "catno": null,
+   "catno": "ANJCH075D",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "8456b8f3-a928-4ea6-9614-d909770de582",
+   "title": "Bindweed",
+   "artist": "Dusky",
+   "artistIds": [
+    "9feea1d6-3e4e-4d3c-b84a-87a12f7cbf94"
+   ],
+   "artists": [
+    "Dusky"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-08-21",
+   "year": 2026,
+   "catno": "ANJDEE1015OD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "b96f690f-7663-4ce8-9a02-a1e83f31d90e",
+   "title": "Ghost in Paris",
+   "artist": "Rezident & Romain Garcia",
+   "artistIds": [
+    "62db9736-d677-4ab8-8aa9-59b51ab3b3f2",
+    "32c1c2f5-b510-4b57-bdf9-e0a3d7c79857"
+   ],
+   "artists": [
+    "Rezident",
+    "Romain Garcia"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-08-25",
+   "year": 2026,
+   "catno": "ANJDEE1016D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "87241d89-e684-48c4-8f61-903294b8514f",
+   "title": "Quicksand (Don’t Go) (Ben Nicky remix)",
+   "artist": "Above & Beyond with Zoë Johnston",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "5509e5eb-67a4-49e9-992a-07d895500deb"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Zoë Johnston"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-08-27",
+   "year": 2026,
+   "catno": "ANJ1000RD1",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "a5ca7206-5816-4d99-bdda-f86bd02f9313",
@@ -54801,6 +54887,27 @@
    "catno": "ANJDEE1005D",
    "type": "Album",
    "secondaryTypes": []
+  },
+  {
+   "id": "fbb08e59-3192-46bb-937c-581cf3f57d85",
+   "title": "Quicksand (Don’t Go) (The Remixes)",
+   "artist": "Above & Beyond with Zoë Johnston",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "5509e5eb-67a4-49e9-992a-07d895500deb"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Zoë Johnston"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-09-03",
+   "year": 2026,
+   "catno": "ANJ1000RD2",
+   "type": "EP",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "e65328c4-2c63-41cb-a558-1955a2dd922c",
@@ -54893,66 +55000,6 @@
    ]
   },
   {
-   "id": "88b2b0cb-c018-4626-ad29-c23b5678b04b",
-   "title": "25 Years of Anjuna Mixed by Elevven",
-   "artist": "Elevven",
-   "artistIds": [
-    "fe250b23-6ba4-4371-b5c4-90154eac4782"
-   ],
-   "artists": [
-    "Elevven"
-   ],
-   "label": "anjunabeats",
-   "date": "",
-   "year": null,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation",
-    "DJ-mix"
-   ]
-  },
-  {
-   "id": "08139ced-69f9-438a-81df-eb3a6c468b02",
-   "title": "25 Years of Anjuna Mixed by SØNIN",
-   "artist": "SØNIN",
-   "artistIds": [
-    "67e5fdbb-1b40-4338-b67d-776f32d877b4"
-   ],
-   "artists": [
-    "SØNIN"
-   ],
-   "label": "anjunabeats",
-   "date": "",
-   "year": null,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation",
-    "DJ-mix"
-   ]
-  },
-  {
-   "id": "4df6a80f-ca4c-431c-947d-0f8cd18b06ec",
-   "title": "25 Years of Anjuna Mixed by PROFF",
-   "artist": "PROFF",
-   "artistIds": [
-    "eec49075-8cfb-4b92-be6f-6b4eea812e03"
-   ],
-   "artists": [
-    "PROFF"
-   ],
-   "label": "anjunabeats",
-   "date": "",
-   "year": null,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation",
-    "DJ-mix"
-   ]
-  },
-  {
    "id": "c08653ad-c566-458e-ae99-161e5b854351",
    "title": "25 Years of Anjuna Mixed by ANUQRAM",
    "artist": "ANUQRAM",
@@ -54961,26 +55008,6 @@
    ],
    "artists": [
     "ANUQRAM"
-   ],
-   "label": "anjunabeats",
-   "date": "",
-   "year": null,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation",
-    "DJ-mix"
-   ]
-  },
-  {
-   "id": "29af7e8b-b5f4-483b-ac68-fcc73fc72523",
-   "title": "25 Years of Anjuna Mixed by Bart Claessen",
-   "artist": "Bart Claessen",
-   "artistIds": [
-    "2f7f295f-5acf-49ce-841b-5669fcef3daf"
-   ],
-   "artists": [
-    "Bart Claessen"
    ],
    "label": "anjunabeats",
    "date": "",
