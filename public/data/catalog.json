@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-31T13:55:47.557Z",
+ "generatedAt": "2026-09-07T12:37:36.793Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -223,6 +223,25 @@
    "catno": "ANJ-014",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "140f943b-d32a-4fbf-a940-4ee33da9d28c",
+   "title": "Razorfish: Remixes",
+   "artist": "Tranquility Base",
+   "artistIds": [
+    "0140d53e-851f-4c50-9069-b2016f8f7174"
+   ],
+   "artists": [
+    "Tranquility Base"
+   ],
+   "label": "anjunabeats",
+   "date": "2002-05-04",
+   "year": 2002,
+   "catno": "ANJ-007",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "45f543e7-d127-4085-a00c-325aa93fce39",
@@ -891,27 +910,6 @@
    "catno": null,
    "type": "Single",
    "secondaryTypes": []
-  },
-  {
-   "id": "140f943b-d32a-4fbf-a940-4ee33da9d28c",
-   "title": "Razorfish (The Remixes)",
-   "artist": "Above & Beyond presents Tranquility Base",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "0140d53e-851f-4c50-9069-b2016f8f7174"
-   ],
-   "artists": [
-    "Above & Beyond",
-    "Tranquility Base"
-   ],
-   "label": "anjunabeats",
-   "date": "2005-02-06",
-   "year": 2005,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": [
-    "Remix"
-   ]
   },
   {
    "id": "606f3c22-b186-4f8a-b5a5-9cdf23deb1e8",
@@ -8460,25 +8458,6 @@
    ]
   },
   {
-   "id": "c22ded81-d68b-451a-80fe-f14f389caa75",
-   "title": "Anjunadeep 04 (Bonus Track Version)",
-   "artist": "Jaytech & James Grant",
-   "artistIds": [
-    "61f0f467-bdd1-48fa-90aa-a23bb0093fca",
-    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
-   ],
-   "artists": [
-    "Jaytech",
-    "James Grant"
-   ],
-   "label": "anjunadeep",
-   "date": "2012-02-27",
-   "year": 2012,
-   "catno": "ANJCDCO029D",
-   "type": "Album",
-   "secondaryTypes": []
-  },
-  {
    "id": "8e450080-aec6-4eff-a905-4c38a9ac619b",
    "title": "Afterthought",
    "artist": "Parker & Hanson",
@@ -9164,6 +9143,27 @@
    "catno": "ANJ244D",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "4bfcf850-2172-4630-815c-4ada5d8df1b8",
+   "title": "Razorfish (Jerome Isma-Ae remix)",
+   "artist": "Above & Beyond presents Tranquility Base",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "0140d53e-851f-4c50-9069-b2016f8f7174"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Tranquility Base"
+   ],
+   "label": "anjunabeats",
+   "date": "2012-07-11",
+   "year": 2012,
+   "catno": "ANJ005RD",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "6603c94e-8edf-4e63-bf53-2675aa68fc1c",
@@ -14235,25 +14235,6 @@
    ]
   },
   {
-   "id": "d0cd5900-56f9-4687-a492-9388848a057a",
-   "title": "Anjunadeep 07",
-   "artist": "Jody Wisternoff & James Grant",
-   "artistIds": [
-    "deebf442-6911-402b-9b7d-f19abae2fa2e",
-    "7a837972-4fee-4e33-adec-1dc17c4b2c5a"
-   ],
-   "artists": [
-    "Jody Wisternoff",
-    "James Grant"
-   ],
-   "label": "anjunadeep",
-   "date": "2015-09-11",
-   "year": 2015,
-   "catno": null,
-   "type": "Album",
-   "secondaryTypes": []
-  },
-  {
    "id": "d6b30d1e-fa96-4512-aad4-8c4e28172f68",
    "title": "Something About You / First Contact",
    "artist": "Grum",
@@ -14913,7 +14894,7 @@
    ]
   },
   {
-   "id": "21163eaf-18d9-4a76-b465-a57cfb659523",
+   "id": "3e898e70-ef7f-4172-ba73-f6fcf7f30814",
    "title": "Little Something Live From Wembley",
    "artist": "Above & Beyond",
    "artistIds": [
@@ -14923,12 +14904,14 @@
     "Above & Beyond"
    ],
    "label": "anjunabeats",
-   "date": "2016-01-03",
+   "date": "2016-01-01",
    "year": 2016,
    "catno": null,
-   "type": "Album",
+   "type": "Broadcast",
    "secondaryTypes": [
-    "Live"
+    "Compilation",
+    "Live",
+    "DJ-mix"
    ]
   },
   {
@@ -15408,9 +15391,10 @@
    "date": "2016-03-25",
    "year": 2016,
    "catno": "ABGT174",
-   "type": "Other",
+   "type": "Broadcast",
    "secondaryTypes": [
-    "Compilation"
+    "Compilation",
+    "DJ-mix"
    ]
   },
   {
@@ -41861,6 +41845,25 @@
    "secondaryTypes": []
   },
   {
+   "id": "10493289-0c63-45c1-b943-efcfccd5754b",
+   "title": "Let You Go",
+   "artist": "Maor Levi & Magnificence",
+   "artistIds": [
+    "72d9e82d-ed37-4057-9031-45306e9507a7",
+    "df427fef-217b-448e-ab1c-5b33d678e58c"
+   ],
+   "artists": [
+    "Maor Levi",
+    "Magnificence"
+   ],
+   "label": "anjunabeats",
+   "date": "2023-03-08",
+   "year": 2023,
+   "catno": "ANJ879BD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "60083fb3-8083-4ca9-8788-4a9e0cca881d",
    "title": "Where I Find My Mind",
    "artist": "Eli & Fur",
@@ -44718,7 +44721,7 @@
   },
   {
    "id": "57ae584c-024d-406c-a8fe-e1b7ac375b3e",
-   "title": "Group Therapy 500 (Live from Los Angeles)",
+   "title": "Group Therapy 500 (live From Los Angeles)",
    "artist": "Above & Beyond",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
@@ -46038,7 +46041,7 @@
    "label": "anjunadeep",
    "date": "2024-05-31",
    "year": 2024,
-   "catno": null,
+   "catno": "ANJCD145",
    "type": "Album",
    "secondaryTypes": [
     "Compilation",
@@ -47135,7 +47138,7 @@
   },
   {
    "id": "1ee0e8d8-0be6-4a94-913d-38eca6be0779",
-   "title": "Anjunabeats presents BPM 01 (DJ mix)",
+   "title": "Anjunabeats presents BPM 01",
    "artist": "Various Artists",
    "artistIds": [
     "89ad4ac3-39f7-470e-963a-56509c546377"
@@ -49255,7 +49258,7 @@
   },
   {
    "id": "b49bcd05-d41b-4198-882e-2d37bfd190a1",
-   "title": "25 Years of Anjuna",
+   "title": "25 Years of Anjuna Mixed by Dosem",
    "artist": "Dosem",
    "artistIds": [
     "fac67cfd-981b-4669-9bdd-8254e9c97053"
@@ -49551,7 +49554,7 @@
   },
   {
    "id": "6f943699-f754-4e9b-bfad-f7ab66c2acbc",
-   "title": "25 Years of Anjuna",
+   "title": "25 Years of Anjuna Mixed by Eli & Fur",
    "artist": "Eli & Fur",
    "artistIds": [
     "70d58a6b-c0b2-47de-8ff3-bc8ab817b5f9"
@@ -50059,7 +50062,7 @@
    "date": "2025-05-20",
    "year": 2025,
    "catno": "ABGT639",
-   "type": "Album",
+   "type": "Broadcast",
    "secondaryTypes": [
     "DJ-mix"
    ]
@@ -50209,14 +50212,12 @@
   {
    "id": "48dd4813-a292-47a9-ba38-a1ad2e198988",
    "title": "25 Years of Anjuna Mixed by Qrion",
-   "artist": "Qrion & Anjunadeep",
+   "artist": "Qrion",
    "artistIds": [
-    "ef31e431-bed3-4ff9-844b-feba174cbe2c",
-    "4ef76d62-6e4a-4503-afd5-b83e80c6450c"
+    "ef31e431-bed3-4ff9-844b-feba174cbe2c"
    ],
    "artists": [
-    "Qrion",
-    "Anjunadeep"
+    "Qrion"
    ],
    "label": "anjunadeep",
    "date": "2025-06-09",
@@ -50483,7 +50484,8 @@
    "catno": "ANJCDCO326BD",
    "type": "Album",
    "secondaryTypes": [
-    "Compilation"
+    "Compilation",
+    "DJ-mix"
    ]
   },
   {
@@ -51558,7 +51560,7 @@
   },
   {
    "id": "297d779c-fb61-4fa3-bf21-c74685df76e0",
-   "title": "Welcome To My World (Remixed)",
+   "title": "Welcome to My World (remixed)",
    "artist": "Jody Wisternoff",
    "artistIds": [
     "deebf442-6911-402b-9b7d-f19abae2fa2e"
@@ -51689,7 +51691,7 @@
   },
   {
    "id": "ddde4bff-f015-45ca-94bb-d696976bc06e",
-   "title": "25 Years Of Anjuna Mixed",
+   "title": "25 Years of Anjuna Mixed by Trance Wax",
    "artist": "Trance Wax",
    "artistIds": [
     "4e51be00-a3a6-42d1-8bcd-02535ee6b7be"
@@ -51850,7 +51852,7 @@
    ]
   },
   {
-   "id": "f2e7c9bb-c453-4ae9-af68-02616fc5b1c6",
+   "id": "20f1d78c-7af0-416c-9830-e6678251aefb",
    "title": "Anjuna25 Anniversary Vinyl Box Set",
    "artist": "Various Artists",
    "artistIds": [
@@ -51865,8 +51867,7 @@
    "catno": "ANJLP170",
    "type": "Album",
    "secondaryTypes": [
-    "Compilation",
-    "Remix"
+    "Compilation"
    ]
   },
   {
@@ -51919,7 +51920,8 @@
    "catno": "ANJCDCO336BD",
    "type": "Album",
    "secondaryTypes": [
-    "Compilation"
+    "Compilation",
+    "DJ-mix"
    ]
   },
   {
@@ -51938,25 +51940,6 @@
    "catno": "ANJCH036D",
    "type": "Single",
    "secondaryTypes": []
-  },
-  {
-   "id": "20f1d78c-7af0-416c-9830-e6678251aefb",
-   "title": "Anjuna25",
-   "artist": "Various Artists",
-   "artistIds": [
-    "89ad4ac3-39f7-470e-963a-56509c546377"
-   ],
-   "artists": [
-    "Various Artists"
-   ],
-   "label": "anjunabeats",
-   "date": "2025-11-05",
-   "year": 2025,
-   "catno": "ANJCD170BD",
-   "type": "Album",
-   "secondaryTypes": [
-    "Compilation"
-   ]
   },
   {
    "id": "2adb00bb-a386-4f9f-b8c9-fdb27d1e5422",
@@ -53387,25 +53370,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "943f4255-6da8-4a80-89b5-22da874aabac",
-   "title": "Attraction (Marsh’s Mix)",
-   "artist": "Marsh & Ferry Corsten",
-   "artistIds": [
-    "871501c5-0a49-443d-bfcb-076a1e56f689",
-    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
-   ],
-   "artists": [
-    "Marsh",
-    "Ferry Corsten"
-   ],
-   "label": "anjunadeep",
-   "date": "2026-03-24",
-   "year": 2026,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "f0022f63-56aa-49e2-a06d-5b1ae3b3ce97",
    "title": "Attraction",
    "artist": "Marsh & Ferry Corsten",
@@ -53421,6 +53385,25 @@
    "date": "2026-03-24",
    "year": 2026,
    "catno": "ANJDEE974BD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "943f4255-6da8-4a80-89b5-22da874aabac",
+   "title": "Attraction (Marsh’s Mix)",
+   "artist": "Marsh & Ferry Corsten",
+   "artistIds": [
+    "871501c5-0a49-443d-bfcb-076a1e56f689",
+    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
+   ],
+   "artists": [
+    "Marsh",
+    "Ferry Corsten"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-03-24",
+   "year": 2026,
+   "catno": null,
    "type": "Single",
    "secondaryTypes": []
   },
@@ -53753,27 +53736,6 @@
    ]
   },
   {
-   "id": "14d9e7a6-011b-4075-bf44-e5a651e59eb3",
-   "title": "Carry Me Home (Koven remix)",
-   "artist": "Above & Beyond with Zoë Johnston",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "5509e5eb-67a4-49e9-992a-07d895500deb"
-   ],
-   "artists": [
-    "Above & Beyond",
-    "Zoë Johnston"
-   ],
-   "label": "anjunabeats",
-   "date": "2026-04-24",
-   "year": 2026,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": [
-    "Remix"
-   ]
-  },
-  {
    "id": "fc5eecc8-566e-4c40-914f-1a37b1856a85",
    "title": "AMi, Vol. 1",
    "artist": "CRi",
@@ -54001,7 +53963,7 @@
    "date": "2026-05-12",
    "year": 2026,
    "catno": null,
-   "type": "Other",
+   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -54889,6 +54851,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "f4c12e8e-583c-48cd-bbb5-d0483761654e",
+   "title": "Moonlight",
+   "artist": "Eric Luttrell",
+   "artistIds": [
+    "6d0da355-5366-4202-8096-e4e8cd1d50b4"
+   ],
+   "artists": [
+    "Eric Luttrell"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-09-01",
+   "year": 2026,
+   "catno": "ANJDEE1017D",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
    "id": "fbb08e59-3192-46bb-937c-581cf3f57d85",
    "title": "Quicksand (Don’t Go) (The Remixes)",
    "artist": "Above & Beyond with Zoë Johnston",
@@ -54922,9 +54901,47 @@
    "label": "reflections",
    "date": "2026-09-03",
    "year": 2026,
-   "catno": "ANJLP172",
+   "catno": "ANJCD172D",
    "type": "Album",
    "secondaryTypes": []
+  },
+  {
+   "id": "b5c39c24-4a4c-46cd-a02a-0c7396793905",
+   "title": "sketches for my beloved",
+   "artist": "Leaving Laurel",
+   "artistIds": [
+    "be232ebd-fc15-49b9-be04-103dfc421556"
+   ],
+   "artists": [
+    "Leaving Laurel"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-09-04",
+   "year": 2026,
+   "catno": "ANJDEE1018OD",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "1bdaa3c0-0977-44aa-89b0-b94b6a274db7",
+   "title": "One (The Remixes)",
+   "artist": "Planet of Souls & Lily Papas",
+   "artistIds": [
+    "cee39ad3-a023-4ee5-b0f2-bc1b8d80af86",
+    "813632d8-2913-4add-a830-20f5092c5123"
+   ],
+   "artists": [
+    "Planet of Souls",
+    "Lily Papas"
+   ],
+   "label": "reflections",
+   "date": "2026-09-07",
+   "year": 2026,
+   "catno": "ANJCH024RD",
+   "type": "EP",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "91fa2480-69ab-41f6-bd4b-45b1420575dc",
@@ -54976,6 +54993,7 @@
    "catno": null,
    "type": "Album",
    "secondaryTypes": [
+    "Compilation",
     "DJ-mix"
    ]
   },
@@ -55075,7 +55093,8 @@
    "catno": null,
    "type": "Album",
    "secondaryTypes": [
-    "Compilation"
+    "Compilation",
+    "DJ-mix"
    ]
   }
  ]
