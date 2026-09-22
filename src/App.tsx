@@ -23,7 +23,6 @@ import type { ThemeId } from './themes'
 import { SlidersIcon } from './Icons'
 import * as spotify from './spotify'
 import { useSpotify } from './useSpotify'
-import { useAppleMusic } from './useAppleMusic'
 import { useUpdateFlow } from './useUpdateFlow'
 import { LABEL_SITE_URL, REPO_URL } from './constants'
 import type { LabelKey, MapNode, NowPlaying, ViewKey } from './types'
@@ -73,7 +72,6 @@ export default function App() {
   const [generatedAt, setGeneratedAt] = useState<string | null>(null)
   const [authError, setAuthError] = useState<string | null>(null)
   const spotifyState = useSpotify()
-  const appleMusicState = useAppleMusic()
   const updateFlow = useUpdateFlow()
 
   // A cacheless refresh (UpdatePrompt) appends a one-off cache-busting query
@@ -516,15 +514,6 @@ export default function App() {
                 updateFlow.dismiss()
                 setShowSettings(true)
               }}
-              onConnectSpotify={() => {
-                setInfoTab(null)
-                updateFlow.dismiss()
-                // Already connected: open Settings to show that, rather than
-                // silently restarting a login the listener already completed.
-                if (spotifyState.session || !spotify.isConfigured()) setShowSettings(true)
-                else spotify.beginLogin().catch(() => {})
-              }}
-              spotifyConnected={Boolean(spotifyState.session)}
             />
           </div>
 
@@ -676,6 +665,7 @@ export default function App() {
               onPickArtist={setConstellationId}
               onClose={() => selectNode(null)}
               spotify={spotifyState}
+              settings={settings}
             />
           )}
         </div>
@@ -685,8 +675,6 @@ export default function App() {
         <PlayerBar
           nowPlaying={nowPlaying}
           paused={playerPaused}
-          spotify={spotifyState}
-          apple={appleMusicState}
           onPausedChange={setPlayerPaused}
           onEnded={handleTrackEnded}
           onJumpTo={() => selectNode(nowPlaying.node)}
@@ -720,7 +708,6 @@ export default function App() {
           settings={settings}
           onChange={setSettings}
           spotify={spotifyState}
-          apple={appleMusicState}
           authError={authError}
           onClose={() => {
             setShowSettings(false)

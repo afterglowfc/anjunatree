@@ -6,9 +6,13 @@ import { SHAPE_LABEL } from './shapes'
 import { REPO_URL } from './constants'
 import { setStatus } from './status'
 import { ExternalLinkIcon, ShareIcon } from './Icons'
-import { musicLinks } from './musicLinks'
+import { appleExactLink, musicLinks, spotifyExactLink, withPreferredFirst } from './musicLinks'
+import type { MusicLink } from './musicLinks'
+import { findAppleMusicLink } from './appleMusic'
+import * as spotifyApi from './spotify'
 import type { AlbumTrack, MapNode, NowPlaying } from './types'
 import type { SpotifyState } from './useSpotify'
+import type { Settings } from './settings'
 
 export const VARIOUS_ARTISTS_MBID = '89ad4ac3-39f7-470e-963a-56509c546377'
 
@@ -31,6 +35,7 @@ interface Props {
   onPickArtist: (artistId: string) => void
   onClose: () => void
   spotify: SpotifyState
+  settings: Settings
 }
 
 type MatchState =
@@ -57,6 +62,7 @@ export default function ReleasePanel({
   onPickArtist,
   onClose,
   spotify,
+  settings,
 }: Props) {
   const [match, setMatch] = useState<MatchState>({ status: 'loading' })
   const [tracks, setTracks] = useState<AlbumTrack[] | null>(null)
@@ -69,10 +75,51 @@ export default function ReleasePanel({
   const autoplayedFor = useRef<string | null>(null)
   const { rel } = node
 
-  // "Listen on…" search links — plain, no API call, works for every
-  // visitor regardless of connection state. See musicLinks.ts for why this
-  // is a search link rather than an exact-match one.
-  const listenLinks = useMemo(() => musicLinks(rel.artist, rel.title), [rel])
+  // "Listen on…" links — start as plain search links (no API call, works
+  // for every visitor), then upgrade in place as exact matches resolve.
+  // Apple Music resolves for everyone, no connection needed (appleMusic.ts);
+  // Spotify only for the small number of accounts that can connect. See
+  // musicLinks.ts for the full reasoning.
+  const preferred = settings.preferredService === 'ask' ? null : settings.preferredService
+  const [listenLinks, setListenLinks] = useState<MusicLink[]>(() =>
+    withPreferredFirst(musicLinks(rel.artist, rel.title), preferred),
+  )
+  useEffect(() => {
+    let alive = true
+    setListenLinks(withPreferredFirst(musicLinks(rel.artist, rel.title), preferred))
+
+    findAppleMusicLink(rel.artist, rel.title).then((url) => {
+      if (!alive || !url) return
+      setListenLinks((prev) =>
+        withPreferredFirst(
+          prev.map((l) => (l.id === 'apple' ? appleExactLink(url) : l)),
+          preferred,
+        ),
+      )
+    })
+
+    if (spotify.session && !spotify.needsReconnect) {
+      spotifyApi
+        .validSession()
+        .then((live) => (live ? spotifyApi.findTrackUri(live, rel.artist, rel.title) : null))
+        .then((match) => {
+          if (!alive || !match) return
+          setListenLinks((prev) =>
+            withPreferredFirst(
+              prev.map((l) =>
+                l.id === 'spotify' ? spotifyExactLink(match.uri, settings.openSpotifyInApp) : l,
+              ),
+              preferred,
+            ),
+          )
+        })
+    }
+
+    return () => {
+      alive = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rel, spotify.session, spotify.needsReconnect, preferred, settings.openSpotifyInApp])
 
   // Credited artists, deduped, for the constellation chips.
   const artists = useMemo(() => {
@@ -291,10 +338,15 @@ export default function ReleasePanel({
           {listenLinks.map((l) => (
             <a
               key={l.id}
-              className="panel-listen-link"
+              className={`panel-listen-link${l.id === preferred ? ' preferred' : ''}`}
               href={l.url}
               target="_blank"
               rel="noreferrer"
+              title={
+                l.exact
+                  ? undefined
+                  : `Opens ${l.id === 'apple' ? 'an' : 'a'} ${l.label} search for this release`
+              }
             >
               {l.label}
               <ExternalLinkIcon />

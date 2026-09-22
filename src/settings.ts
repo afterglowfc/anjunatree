@@ -11,6 +11,11 @@ export const FONT_SCALES = [
 
 export type FontScaleId = (typeof FONT_SCALES)[number]['id']
 
+/** Which service "Play full track" opens by default. 'ask' shows the full
+ * Listen-on row with no service emphasized; any other value moves that
+ * service first and highlights it as the one-click default. */
+export type PreferredService = 'ask' | 'spotify' | 'apple' | 'youtube'
+
 export interface Settings {
   theme: ThemeId
   fontScale: FontScaleId
@@ -22,6 +27,12 @@ export interface Settings {
    * Spotify shouldn't itself change what the map looks like without an
    * explicit opt-in. */
   showSavedReleases: boolean
+  preferredService: PreferredService
+  /** Open Spotify links via its `spotify:` URI (native app) instead of the
+   * open.spotify.com web player. Spotify-only: Apple Music and YouTube
+   * Music links are universal/app links, so the OS already picks app vs.
+   * web on its own — there's no separate choice to offer for those. */
+  openSpotifyInApp: boolean
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -31,6 +42,8 @@ export const DEFAULT_SETTINGS: Settings = {
   reduceMotion: false,
   largeMarks: false,
   showSavedReleases: false,
+  preferredService: 'ask',
+  openSpotifyInApp: false,
 }
 
 const KEY = 'anjunatree:settings'

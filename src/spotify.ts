@@ -26,20 +26,18 @@ const SAVED_KEYS_STORE = 'anjunatree:spotify:saved-releases'
 // design, so exporting never posts to a listener's public profile without
 // them choosing to make it public afterward themselves, in Spotify's own UI.
 // Adding scopes invalidates tokens issued before them, hence needsReconnect().
-const SCOPES = [
-  'user-read-email',
-  'user-read-private',
-  'streaming',
-  'user-read-playback-state',
-  'user-modify-playback-state',
-  'user-library-read',
-  'playlist-modify-private',
-]
+//
+// No playback scopes here on purpose — AnjunaTree no longer embeds the
+// Spotify Web Playback SDK (see musicLinks.ts / docs/DEVELOPMENT.md): full
+// tracks open in Spotify's own app or web player via a plain link instead,
+// which needs no scope at all. What's left is purely for personalization:
+// matching a listener's saved releases onto the map, and exporting a
+// constellation as a playlist.
+const SCOPES = ['user-read-email', 'user-read-private', 'user-library-read', 'playlist-modify-private']
 
-// Scopes a stored session must have, beyond the baseline sign-in ones, for
-// every feature to work. Anything missing means "reconnect once" rather than
-// "broken" — see needsReconnect().
-const REQUIRED_SCOPES = ['streaming', 'user-library-read', 'playlist-modify-private']
+// Scopes a stored session must have for every feature to work. Anything
+// missing means "reconnect once" rather than "broken" — see needsReconnect().
+const REQUIRED_SCOPES = ['user-library-read', 'playlist-modify-private']
 
 export interface Session {
   accessToken: string

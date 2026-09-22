@@ -5,6 +5,68 @@ this list — what someone would actually notice, not every commit. This file
 is the fuller, developer-facing version; see `git log` for the complete
 history.
 
+## 2026-09-22 — Playback pivot: links, not embedded SDKs
+
+A real architectural change, on the same branch that built the two things
+it replaces — the working history is instructive, not something to sand
+down. Prompted by asking, after the fact, "is there a better way to enable
+full-track playback across services, nearly agnostic of the user's
+service?" — and concluding the honest answer was to stop embedding
+playback for either provider at all.
+
+- **Removed**: `src/spotifyPlayer.ts` (the Spotify Web Playback SDK
+  integration), `src/applePlayer.ts` and `src/useAppleMusic.ts` (the
+  MusicKit JS integration). `useSpotify.ts` lost all player-attachment
+  state (`playerRef`, `playerReady`, `playback`, `playFull`, `pause`,
+  `resume`, `setMuted`, `canPlayFull`) — what's left is purely
+  personalization: session, profile, saved-releases sync, disconnect,
+  playlist export. `spotify.ts`'s requested scopes dropped `streaming`,
+  `user-read-playback-state`, and `user-modify-playback-state` — none of
+  them were ever needed for anything but the now-removed embedded player.
+  `PlayerBar.tsx` shrank to just the iTunes preview: no more resolving,
+  no more source-switching, no third-party playback state to mirror.
+- **Added**: `src/appleMusic.ts`, a stateless, no-auth Apple Music catalog
+  search — a plain `fetch` to `api.music.apple.com` with the existing
+  public developer token, no MusicKit SDK loaded at all. This is a
+  genuine improvement over what it replaces, not just a simplification:
+  Apple's catalog search only ever needed the developer token, never a
+  per-user one, so it now resolves an exact "Listen on Apple Music" link
+  for **every visitor**, with no connect step — something the removed
+  MusicKit player could never do for anyone who hadn't signed in.
+  `musicLinks.ts` gained `spotifyExactLink()` (upgrades a connected
+  listener's link to `spotify:track:ID` or the open.spotify.com
+  equivalent, their choice) and `withPreferredFirst()` (a new Settings
+  preference reorders the Listen-on row). `ReleasePanel.tsx`'s Listen-on
+  row now resolves both exact links in the background and swaps them in
+  as they arrive, still starting from the zero-dependency search links
+  built last time.
+- **New settings**: `preferredService` (ask/Spotify/Apple Music/YouTube
+  Music — highlights that service first) and `openSpotifyInApp` (native
+  `spotify:` URI vs. the web player — Spotify-only, since Apple Music and
+  YouTube Music links are universal/app links the OS already resolves on
+  its own; there's nothing left for a setting to control there).
+- **Why remove rather than keep both paths**: embedding playback for
+  either service meant asking every visitor to sign into something just
+  to hear a track, on top of the two dead ends already found — Spotify's
+  Extended Quota Mode closed to non-commercial projects in May 2025
+  (permanent 5-tester cap), and Apple MusicKit JS's exact `api.search()`
+  response shape was still unverified without a live subscriber account.
+  A plain link needs none of that, works in any browser, on any device,
+  for every visitor — the whole reason "Listen on" links existed
+  alongside the embedded players in the first place. Once that was true
+  for every release, the embedded players were doing strictly less than
+  the links already did, for a much smaller audience.
+- Settings, the welcome modal, and docs (`docs/DEVELOPMENT.md`,
+  `README.md`) all updated to match — including removing the "Connect
+  Apple Music" section entirely (nothing left for it to do; Apple's exact
+  link needs no connection) and rewriting the Spotify section to be
+  honest that connecting it now only ever affects three things —saved-
+  release matching, playlist export, and an exact vs. search Spotify
+  link — never full-track listening, which never depended on it.
+- Noted in `README.md`: this project runs on an irregular, on/off
+  schedule, not steady maintenance — said plainly rather than left for
+  a visitor to guess from the gaps between commits.
+
 ## 2026-08-20 — "Listen on…" links
 
 - New `src/musicLinks.ts` and a "Listen on" row in `ReleasePanel.tsx`:

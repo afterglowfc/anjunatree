@@ -8,7 +8,7 @@
 // Bump it alongside adding an entry here; see useUpdateFlow.ts for how it's
 // used to decide whether to show the changelog automatically.
 
-export const APP_VERSION = '2026.08.20f'
+export const APP_VERSION = '2026.09.22'
 
 export interface ChangelogEntry {
   version: string
@@ -18,6 +18,17 @@ export interface ChangelogEntry {
 }
 
 export const CHANGELOG: ChangelogEntry[] = [
+  {
+    version: '2026.09.22',
+    date: '22 September 2026',
+    title: 'A simpler way to hear the full track',
+    items: [
+      'Full tracks now always open in your own Spotify, Apple Music, or YouTube Music — no more connecting an account just to press play',
+      'Apple Music links go to the exact track for everyone, automatically',
+      'Pick a preferred service in Settings and it opens first on every release',
+      'Connecting Spotify is now just for your saved releases and constellation playlists — full-track playback never needed it',
+    ],
+  },
   {
     version: '2026.08.20f',
     date: '20 August 2026',

@@ -34,23 +34,27 @@ npm run ingest
   (Album > EP > Single), packed with a one-shot d3 force simulation
   (`src/data.ts`). Zoom/pan via d3-zoom, hover hit-testing via d3-quadtree,
   double-click resets the view.
-- **Playback** — signed out, every release plays a 30-second iTunes preview.
-  Connecting Spotify Premium or Apple Music plays the same rows in full
-  instead, with automatic fallback to the preview when a track isn't carried
-  by whichever's connected. Both are opt-in third-party code, loaded **only
-  after** a listener explicitly connects that account — a visitor who never
-  signs in fetches nothing from either. `PlayerBar.tsx` tries Spotify first,
-  then Apple Music, then the preview, for the rare case both are connected
-  at once; `spotifyPlayer.ts`/`useSpotify.ts` and
-  `applePlayer.ts`/`useAppleMusic.ts` are otherwise independent, matching
-  the same connect → attach player → resolve-and-play shape so a third
-  provider could join the same way. Apple's connection is simpler than
-  Spotify's: no OAuth redirect to complete, since MusicKit's own
-  `authorize()` handles sign-in and remembers it across reloads on its own —
-  `useAppleMusic.ts` only keeps a local flag (not a token) so a returning,
-  previously-connected listener reconnects automatically. See "Connecting
-  music services" below for what each needs to be enabled at all, and why
-  Apple is the one worth actually planning around.
+- **Playback** — every release plays a 30-second iTunes preview right in the
+  app, no account needed. For the full track, "Listen on" (`musicLinks.ts`,
+  in `ReleasePanel.tsx`) opens it in Spotify, Apple Music, or YouTube Music
+  instead — a plain link, not embedded playback. AnjunaTree tried embedding
+  both Spotify's Web Playback SDK and Apple's MusicKit JS first (still in
+  git history) and deliberately moved off both: Spotify's SDK needs
+  Development Mode's 5-user cap, which is effectively permanent for a
+  non-commercial project (see "Connecting music services" below), and a
+  link works in any browser on any device without asking anyone to sign
+  into anything. Apple Music's link is a genuine exact match **for every
+  visitor, no connection needed** — its catalog search only ever required
+  the public developer token, never a per-user one (`appleMusic.ts`, a
+  plain `fetch` — no SDK loaded at all). Spotify's link is exact only for
+  the small number of accounts that can connect (`findTrackUri` in
+  `spotify.ts`); everyone else gets a search link. YouTube Music is always
+  a search link. A listener can set a preferred service in Settings
+  (`settings.ts`'s `preferredService`), which moves it first in the Listen-on
+  row; Spotify additionally offers opening via its `spotify:` URI (the
+  native app) instead of the web player — Apple Music and YouTube Music
+  links are universal/app links, so the OS already resolves app vs. web on
+  its own, with nothing left for a setting to control.
 - **Previews & track lists** — clicking a release looks it up on the iTunes
   Search API (`src/itunes.ts`, no auth needed), then pulls the collection's
   full track list via `/lookup?entity=song` — every track with its own
@@ -118,10 +122,14 @@ npm run ingest
 
 ## Connecting music services
 
-The anonymous tier (iTunes previews) needs nothing. The full-track tier for
-subscribers needs credentials only you can create:
+The anonymous tier (iTunes previews, and the "Listen on" links — Apple
+Music's is exact by default) needs nothing at all. What's left needs
+credentials only you can create, and is now entirely about
+**personalization**, not playback — neither service is asked to stream
+anything into the app:
 
-**Spotify** (Premium users, Web Playback SDK)
+**Spotify** (personalization: saved-release matching, playlist export,
+exact links)
 1. <https://developer.spotify.com/dashboard> → *Create app*.
 2. Redirect URIs — register the **app's own URL**, with the trailing slash and
    no extra path. A static host has nothing to serve at `/callback`, so
@@ -135,9 +143,10 @@ subscribers needs credentials only you can create:
 
    If you already registered a `/callback` URI, either add these alongside it or
    change `redirectUri()` in `src/spotify.ts` to match what you registered.
-3. Tick *Web API* and *Web Playback SDK*. Copy the **Client ID** into
-   `.env.local` as `VITE_SPOTIFY_CLIENT_ID=…` (PKCE flow — no client secret
-   anywhere in the app).
+3. Tick *Web API* only — no *Web Playback SDK*, since AnjunaTree doesn't
+   embed playback anymore (see "Playback" above). Copy the **Client ID**
+   into `.env.local` as `VITE_SPOTIFY_CLIENT_ID=…` (PKCE flow — no client
+   secret anywhere in the app).
 4. While the app is in Development Mode, add your own Spotify account under
    *User Management* — capped at **5 authenticated users**, all manually
    allowlisted. This is effectively permanent for a project like this one:
@@ -146,11 +155,13 @@ subscribers needs credentials only you can create:
    250k+ monthly active users, and applying via a company email —
    individuals can no longer apply at all. See the
    [quota modes docs](https://developer.spotify.com/documentation/web-api/concepts/quota-modes)
-   and [this writeup](https://spotify.leemartin.com/) of the change. Don't
-   plan around Spotify ever being AnjunaTree's public full-track path;
-   Apple Music (below) doesn't have an equivalent wall.
+   and [this writeup](https://spotify.leemartin.com/) of the change. This
+   cap only limits who gets saved-release matching, playlist export, and an
+   exact (vs. search) Spotify link — not who can listen, since listening
+   was moved off Spotify's API entirely.
 
-**Apple Music** (subscribers, MusicKit JS)
+**Apple Music** (a genuinely public exact-match link — no per-user
+connection at all)
 1. Developer account → *Certificates, Identifiers & Profiles* →
    *Identifiers* → new **Media ID** (e.g. `music.one.a64.anjunatree`).
 2. *Keys* → new key with **Media Services (MusicKit)** enabled, bound to that
@@ -159,6 +170,14 @@ subscribers needs credentials only you can create:
 3. `node scripts/apple-token.mjs AuthKey_XXXX.p8 <TEAM_ID> <KEY_ID>` → paste
    the printed JWT into `.env.local` as `VITE_APPLE_DEV_TOKEN=…`
    (max validity 180 days — regenerate twice a year).
+
+That's the whole Apple setup — `appleMusic.ts` calls Apple's catalog search
+directly with this one token, for every visitor, with nothing to
+authorize and nothing to reconnect. There's no equivalent "Apple
+personalization" (a saved-library sync mirroring Spotify's) built yet;
+MusicKit's Library API needs a real per-user Music-User-Token via
+MusicKit JS's `authorize()`, which is different enough from catalog
+search to be its own piece of work if it's ever wanted.
 
 `.env.local` is gitignored; both values are client-side-safe by design (the
 Client ID is public, the Apple token is meant to ship to browsers — the
@@ -173,8 +192,10 @@ runtime compute: the layout, search, and filtering all run in the visitor's
 browser, and the two APIs it talks to (MusicBrainz at build time, iTunes at
 listen time) are called directly.
 
-HTTPS is required in production — both Spotify's redirect URIs and Apple's
-MusicKit refuse plain HTTP.
+HTTPS is required in production for Spotify's login redirect (its OAuth
+flow refuses plain HTTP). Apple's catalog search has no such requirement —
+it's a plain authenticated fetch, indifferent to the calling page's own
+scheme.
 
 **GitHub Pages** is the default here: `.github/workflows/deploy.yml` builds and
 publishes on every push to `main`. To turn it on: *Settings → Pages → Source:
@@ -334,33 +355,28 @@ showing up on the board.
 
 ## Roadmap
 
-- [x] Full-track playback via the Spotify Web Playback SDK for Premium
-      listeners (`src/spotifyPlayer.ts`, `src/useSpotify.ts`). Falls back to
-      previews for free accounts and for anything Spotify doesn't carry.
-- [x] Apple MusicKit JS as a second full-playback provider
-      (`src/applePlayer.ts`, `src/useAppleMusic.ts`) — now the more
-      important of the two, not just an alternative: Spotify's Extended
-      Quota Mode (its only public-access tier) has been effectively closed
-      to non-commercial projects since May 2025 (see "Connecting music
-      services" above), so Spotify full-track playback stays capped at 5
-      testers indefinitely. Apple has no equivalent MAU/business-entity
-      wall on MusicKit JS, making it the realistic path to full-track
-      playback for listeners generally, not just a handful of accounts.
-      `PlayerBar.tsx` tries Spotify first, then Apple Music, then the
-      preview. Deliberately scoped to playback only for this first pass —
-      no Apple equivalent of the saved-releases sync or playlist export
-      Spotify has; MusicKit's library/playlist APIs are different enough
-      to be their own piece of work, not a mechanical port.
-      **Unverified**: the exact runtime shape of MusicKit JS's
-      `api.search()` response — built against Apple's REST API docs and
-      the community `musickit-typescript` type definitions (Apple's own
-      MusicKit JS reference is a JS-rendered page this project's tooling
-      can't read), since testing it for real needs a paid Apple Developer
-      account and a live Apple Music subscription, neither available while
-      building this. `applePlayer.ts`'s `extractSongs()` handles the two
-      documented response shapes and throws a specific, visible error if
-      neither matches, rather than failing silently — check the actual
-      response the first time this runs against a real developer token.
+- [x] ~~Full-track playback via the Spotify Web Playback SDK~~ and
+      ~~Apple MusicKit JS as a second full-playback provider~~ — both
+      built (still in git history), then both replaced by "Listen on"
+      links instead. Two separate reasons, not one: Spotify's Extended
+      Quota Mode (its only public-access tier) closed to non-commercial
+      projects in May 2025, capping Development Mode's embedded player at
+      5 testers permanently — not a path to a public feature at all. Apple
+      MusicKit JS didn't have that wall, but embedding it still meant
+      asking every visitor to sign into an Apple ID just to hear a track,
+      and its exact JS API response shape couldn't be verified without a
+      live subscriber account. A plain link sidesteps every one of those
+      problems and works for every visitor, on every device, in any
+      browser — see "Playback" and "Connecting music services" above, and
+      CHANGELOG.md for the fuller story of the two false starts.
+- [x] "Listen on" links (`musicLinks.ts`, `appleMusic.ts`,
+      `ReleasePanel.tsx`) — Spotify, Apple Music, and YouTube Music,
+      always available, no connection required. Apple's is a genuine
+      exact match for every visitor (catalog search only ever needed the
+      public developer token); Spotify's is exact only for the small
+      number of accounts that can connect, search otherwise; YouTube
+      Music is always a search link. A listener can set a preferred
+      service in Settings, which highlights it first.
 - [x] Personalised map: an opt-in Settings toggle rings releases matching the
       listener's saved Spotify albums/tracks (`spotify.fetchSavedReleaseKeys`,
       matched release-level in `App.tsx`'s `savedNodeIds`), and any traced

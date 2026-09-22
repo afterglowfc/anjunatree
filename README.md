@@ -43,9 +43,10 @@ anything still to come.
 ### Everything else
 
 - **Listen instantly** — every release plays a 30-second iTunes preview, no
-  account needed. Connect Spotify Premium or Apple Music and the same
-  releases play in full; a "Listen on…" link on every release also opens it
-  straight in Spotify, Apple Music, or YouTube Music, no account needed.
+  account needed. A "Listen on…" link opens the full track in Spotify,
+  Apple Music, or YouTube Music instead — Apple Music's link is exact for
+  everyone; connecting Spotify gets you an exact link there too, on top of
+  the personalization below.
 - **Shareable links** — the URL always encodes your view, search, filters,
   and selection, so any moment on the map is a link you can send someone;
   a share button copies it, and the map can be exported as a PNG.
@@ -69,9 +70,11 @@ how load-bearing they are:
 - **[Apple's iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/)**
   — every 30-second preview and piece of artwork is served live by Apple,
   not stored or proxied here.
-- **[Spotify Web Playback SDK](https://developer.spotify.com/documentation/web-playback-sdk)**
-  — powers the optional full-track tier for Premium listeners who connect
-  their account.
+- **[Spotify Web API](https://developer.spotify.com/documentation/web-api)**
+  and **[Apple Music API](https://developer.apple.com/documentation/applemusicapi)**
+  — power the optional personalization (saved releases, playlist export)
+  and the exact-match "Listen on" links; AnjunaTree never embeds playback
+  from either.
 - **[React](https://react.dev)**, **[D3](https://d3js.org)** (the canvas
   layout, zoom, and force simulation), **[Vite](https://vitejs.dev)**, and
   **[vite-plugin-pwa](https://vite-pwa-org.netlify.app)** — the app itself is
@@ -92,7 +95,9 @@ without attribution. If you notice a credit that's missing or wrong,
 
 Issues, ideas, and corrections are welcome — see
 **[CONTRIBUTING.md](CONTRIBUTING.md)** for where things live and how to send a
-patch.
+patch. This is a side project worked on in bursts, not on any schedule —
+expect stretches of quiet between updates rather than steady activity, and
+know that a slow response isn't the same as no response.
 
 ## Development
 
