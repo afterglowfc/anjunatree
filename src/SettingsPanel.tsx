@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FONT_SCALES } from './settings'
-import type { Settings } from './settings'
+import type { PreferredService, Settings } from './settings'
 import * as spotify from './spotify'
 import type { SpotifyState } from './useSpotify'
 
@@ -13,6 +13,13 @@ interface Props {
   onClose: () => void
   onExportImage: (opts: { transparent: boolean; watermark: boolean }) => void
 }
+
+const SERVICE_OPTIONS: { id: PreferredService; label: string }[] = [
+  { id: 'ask', label: 'Ask each time' },
+  { id: 'spotify', label: 'Spotify' },
+  { id: 'apple', label: 'Apple Music' },
+  { id: 'youtube', label: 'YouTube Music' },
+]
 
 /** "just now" / "12 min ago" / "3 hr ago" / "2 days ago" — coarse on purpose,
  * this is only ever describing a cache that's at most a day or so old. */
@@ -156,37 +163,59 @@ export default function SettingsPanel({
           </section>
 
           <section>
+            <h3>Playback</h3>
+            <p className="set-hint">
+              Every release plays a 30-second preview right here — no account
+              needed. &ldquo;Listen on&rdquo; opens the full track in Spotify,
+              Apple Music, or YouTube Music instead.
+            </p>
+            <span className="set-field-label">Preferred service</span>
+            <div className="seg">
+              {SERVICE_OPTIONS.map((o) => (
+                <button
+                  key={o.id}
+                  className={settings.preferredService === o.id ? 'on' : ''}
+                  onClick={() => set('preferredService', o.id)}
+                  aria-pressed={settings.preferredService === o.id}
+                >
+                  {o.label}
+                </button>
+              ))}
+            </div>
+            <p className="set-hint">
+              Highlights that service first in the Listen-on row on every release.
+            </p>
+            {settings.preferredService === 'spotify' && (
+              <Toggle
+                label="Open Spotify in the app"
+                hint="Uses Spotify's own app instead of the web player, when it's installed."
+                checked={settings.openSpotifyInApp}
+                onChange={(v) => set('openSpotifyInApp', v)}
+              />
+            )}
+            <p className="set-hint">
+              Apple Music links go to the exact track for everyone — no
+              connection needed. Spotify can only do that for the small
+              number of accounts below; connect one for that, plus your
+              saved releases and playlist export.
+            </p>
+          </section>
+
+          <section>
             <h3>Spotify</h3>
             {sp.session ? (
               <>
                 <p className="set-hint">
-                  Connected{sp.profile ? ` as ${sp.profile.displayName}` : ''}
-                  {sp.profile?.product ? ` · ${sp.profile.product}` : ''}.
+                  Connected{sp.profile ? ` as ${sp.profile.displayName}` : ''}.
                 </p>
 
-                {sp.needsReconnect ? (
+                {sp.needsReconnect && (
                   <p className="set-error">
-                    This sign-in predates full-track playback, saved-release matching,
-                    and playlist export. Reconnect once to grant those — nothing else
-                    changes.
+                    This sign-in predates saved-release matching and exact
+                    Spotify links. Reconnect once to grant those — nothing
+                    else changes.
                   </p>
-                ) : sp.profile && sp.profile.product !== 'premium' ? (
-                  <p className="set-hint">
-                    Spotify only allows other apps to stream full tracks for Premium
-                    accounts, so playback stays on 30-second previews. Everything else
-                    works exactly the same.
-                  </p>
-                ) : sp.connecting ? (
-                  <p className="set-hint">Starting the Spotify player…</p>
-                ) : sp.canPlayFull ? (
-                  <p className="set-hint">
-                    <strong>Full-track playback is on.</strong> Releases now play in
-                    full through Spotify; anything Spotify doesn&apos;t carry falls back
-                    to a preview automatically.
-                  </p>
-                ) : null}
-
-                {sp.error && <p className="set-error">{sp.error}</p>}
+                )}
 
                 {!sp.needsReconnect && (
                   <>
@@ -234,13 +263,13 @@ export default function SettingsPanel({
             ) : (
               <>
                 <p className="set-hint">
-                  AnjunaTree works fully without an account — every release plays a
-                  30-second preview. Connecting Spotify Premium plays them in full:
+                  Connecting Spotify doesn&apos;t change how tracks play — full tracks
+                  already open in Spotify itself. It unlocks two extras:
                 </p>
                 <ul className="set-list">
-                  <li>Full-length tracks instead of previews (needs Premium)</li>
                   <li>Your saved releases lit up on the map, if you turn that on</li>
-                  <li>Turn any artist's constellation into a playlist</li>
+                  <li>Turn any artist&apos;s constellation into a playlist</li>
+                  <li>An exact Spotify link on every release, not just a search</li>
                 </ul>
                 <button
                   className="set-button primary"
@@ -255,11 +284,13 @@ export default function SettingsPanel({
                 )}
                 {configured && (
                   <p className="set-hint">
-                    Spotify caps apps like this one to a small number of approved accounts
-                    — its public-access tier now requires being a registered business with
-                    250k+ monthly users, which a non-commercial fan project can&apos;t
-                    reach. If Connect doesn&apos;t work for you, that&apos;s why, not a
-                    bug. Every release still plays a 30-second preview either way.
+                    Spotify caps this to a small number of approved accounts
+                    — its public-access tier now requires being a registered
+                    business with 250k+ monthly users, which a
+                    non-commercial fan project can&apos;t reach. If Connect
+                    doesn&apos;t work for you, that&apos;s why, not a bug —
+                    and it only affects these three extras, not full-track
+                    listening, which never depended on it.
                   </p>
                 )}
               </>

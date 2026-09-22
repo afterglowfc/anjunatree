@@ -5,6 +5,143 @@ this list — what someone would actually notice, not every commit. This file
 is the fuller, developer-facing version; see `git log` for the complete
 history.
 
+## 2026-09-22 — Playback pivot: links, not embedded SDKs
+
+A real architectural change, on the same branch that built the two things
+it replaces — the working history is instructive, not something to sand
+down. Prompted by asking, after the fact, "is there a better way to enable
+full-track playback across services, nearly agnostic of the user's
+service?" — and concluding the honest answer was to stop embedding
+playback for either provider at all.
+
+- **Removed**: `src/spotifyPlayer.ts` (the Spotify Web Playback SDK
+  integration), `src/applePlayer.ts` and `src/useAppleMusic.ts` (the
+  MusicKit JS integration). `useSpotify.ts` lost all player-attachment
+  state (`playerRef`, `playerReady`, `playback`, `playFull`, `pause`,
+  `resume`, `setMuted`, `canPlayFull`) — what's left is purely
+  personalization: session, profile, saved-releases sync, disconnect,
+  playlist export. `spotify.ts`'s requested scopes dropped `streaming`,
+  `user-read-playback-state`, and `user-modify-playback-state` — none of
+  them were ever needed for anything but the now-removed embedded player.
+  `PlayerBar.tsx` shrank to just the iTunes preview: no more resolving,
+  no more source-switching, no third-party playback state to mirror.
+- **Added**: `src/appleMusic.ts`, a stateless, no-auth Apple Music catalog
+  search — a plain `fetch` to `api.music.apple.com` with the existing
+  public developer token, no MusicKit SDK loaded at all. This is a
+  genuine improvement over what it replaces, not just a simplification:
+  Apple's catalog search only ever needed the developer token, never a
+  per-user one, so it now resolves an exact "Listen on Apple Music" link
+  for **every visitor**, with no connect step — something the removed
+  MusicKit player could never do for anyone who hadn't signed in.
+  `musicLinks.ts` gained `spotifyExactLink()` (upgrades a connected
+  listener's link to `spotify:track:ID` or the open.spotify.com
+  equivalent, their choice) and `withPreferredFirst()` (a new Settings
+  preference reorders the Listen-on row). `ReleasePanel.tsx`'s Listen-on
+  row now resolves both exact links in the background and swaps them in
+  as they arrive, still starting from the zero-dependency search links
+  built last time.
+- **New settings**: `preferredService` (ask/Spotify/Apple Music/YouTube
+  Music — highlights that service first) and `openSpotifyInApp` (native
+  `spotify:` URI vs. the web player — Spotify-only, since Apple Music and
+  YouTube Music links are universal/app links the OS already resolves on
+  its own; there's nothing left for a setting to control there).
+- **Why remove rather than keep both paths**: embedding playback for
+  either service meant asking every visitor to sign into something just
+  to hear a track, on top of the two dead ends already found — Spotify's
+  Extended Quota Mode closed to non-commercial projects in May 2025
+  (permanent 5-tester cap), and Apple MusicKit JS's exact `api.search()`
+  response shape was still unverified without a live subscriber account.
+  A plain link needs none of that, works in any browser, on any device,
+  for every visitor — the whole reason "Listen on" links existed
+  alongside the embedded players in the first place. Once that was true
+  for every release, the embedded players were doing strictly less than
+  the links already did, for a much smaller audience.
+- Settings, the welcome modal, and docs (`docs/DEVELOPMENT.md`,
+  `README.md`) all updated to match — including removing the "Connect
+  Apple Music" section entirely (nothing left for it to do; Apple's exact
+  link needs no connection) and rewriting the Spotify section to be
+  honest that connecting it now only ever affects three things —saved-
+  release matching, playlist export, and an exact vs. search Spotify
+  link — never full-track listening, which never depended on it.
+- Noted in `README.md`: this project runs on an irregular, on/off
+  schedule, not steady maintenance — said plainly rather than left for
+  a visitor to guess from the gaps between commits.
+
+## 2026-08-20 — "Listen on…" links
+
+- New `src/musicLinks.ts` and a "Listen on" row in `ReleasePanel.tsx`:
+  plain search-URL deep links to Spotify, Apple Music, and YouTube
+  Music, shown on every release for every visitor regardless of
+  connection state. No API call, no auth, nothing to sunset.
+- Two other approaches were checked and deliberately rejected first,
+  not just skipped:
+  - **Odesli/song.link** (one link resolving to the same track across
+    every service) — checked its current status before building on
+    it: Odesli has stopped issuing new API keys, and its API carries a
+    deprecation notice with a retirement date that's already passed
+    (still limping along past it, not something to build a real
+    dependency on now).
+  - **Exact-match links via Spotify's Client Credentials flow**
+    (app-level auth, no per-user login — and, unlike the per-user OAuth
+    flow this app already uses for playback, plausibly not subject to
+    Development Mode's 5-user cap at all, since that cap's own wording
+    is specifically about "authenticated Spotify users"). Genuinely
+    promising, but needs a client secret, and this is a fully static
+    site with nowhere safe to hold one — a `VITE_` variable would
+    expose it to every visitor's devtools, exactly the misuse
+    Spotify's own docs warn against. Not implemented; would need a
+    real architecture change (a server or serverless proxy) this
+    project has deliberately never had.
+- New `ExternalLinkIcon` in `Icons.tsx` — a generic "opens elsewhere"
+  glyph, deliberately not any service's own logo, so the row never
+  reads as branding or endorsement from Spotify/Apple/YouTube.
+- README's "Listen instantly" bullet updated to mention both Apple
+  Music and the new link row, alongside Spotify.
+
+## 2026-08-20 — Apple Music: a second full-track provider
+
+- Built on a feature branch (`feature-apple-musickit-playback`), scoped
+  deliberately to playback only — no Apple equivalent of Spotify's
+  saved-releases sync or playlist export in this pass, since MusicKit's
+  library/playlist APIs are different enough to be their own piece of
+  work, not a mechanical port.
+- **`src/applePlayer.ts`** mirrors `spotifyPlayer.ts`'s shape (load SDK
+  once, connect, resolve a track by search, play) using MusicKit JS.
+  Apple's auth model turned out simpler than Spotify's: no OAuth
+  redirect to complete — `configure()` takes the developer token (from
+  `VITE_APPLE_DEV_TOKEN`, already plumbed in from earlier work) and
+  `authorize()` handles sign-in in an Apple-hosted popup, with MusicKit
+  remembering that authorization internally across reloads.
+- **`src/useAppleMusic.ts`** mirrors `useSpotify.ts`'s connect/attach/
+  play pattern, including the same StrictMode ref-guard-resets-on-
+  cleanup fix documented there. One deliberate addition: a local
+  `anjunatree:apple:connected` flag (not a token — MusicKit already
+  persists the real authorization) so a returning, previously-connected
+  listener reconnects automatically, the same experience Spotify gives
+  from its own session, without loading Apple's SDK for a first-time
+  visitor who's never connected.
+- **`src/PlayerBar.tsx`** generalized from a Spotify-or-preview binary
+  to try Spotify, then Apple Music, then the preview — for the rare
+  case a listener has both connected. `Mode` gained `'apple'`; the
+  finished-track watcher, mute/pause controls, and the source badge all
+  now read from whichever provider is actually active instead of
+  assuming Spotify.
+- **API surface verified against real type definitions, not memory or
+  a guess**: Apple's own MusicKit JS reference is a JS-rendered page
+  this project's tooling can't read, so `applePlayer.ts` was built
+  against the community-maintained `musickit-typescript` package's
+  `.d.ts` files (pulled and read directly, not installed as a
+  dependency). One thing that couldn't be verified this way: the exact
+  runtime shape of `api.search()`'s resolved response. `extractSongs()`
+  handles the two shapes Apple's REST docs and MusicKit JS examples
+  show, and throws a specific, visible error if neither matches, rather
+  than silently returning no results — flagged in `docs/DEVELOPMENT.md`
+  as the one thing worth checking against a real developer token and
+  subscriber account, which this session had neither of.
+- `docs/DEVELOPMENT.md`'s "How it works" and roadmap sections, and
+  `src/changelog.ts`, updated to match — this is genuinely
+  listener-facing, not an internal refactor.
+
 ## 2026-08-20 — Spotify Extended Quota is a dead end
 
 - Corrected course after checking Spotify's current policy directly

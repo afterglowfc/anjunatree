@@ -492,6 +492,63 @@ body {
   margin-top: 6px;
 }
 
+.panel-listen-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.panel-listen-label {
+  font-size: calc(10.5px * var(--font-scale));
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-right: 2px;
+}
+
+.panel-listen-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 4px 10px;
+  color: var(--ink-secondary);
+  font-size: calc(12px * var(--font-scale));
+  text-decoration: none;
+}
+
+.panel-listen-link:hover {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 25%, var(--hairline));
+}
+
+.panel-listen-link svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.panel-listen-link.preferred {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--label-anjunabeats) 32%, transparent),
+    color-mix(in srgb, var(--label-anjunadeep) 32%, transparent)
+  );
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--label-anjunabeats) 55%, transparent);
+  font-weight: 600;
+}
+
+.panel-listen-link.preferred svg {
+  opacity: 1;
+}
+
 .panel-section-label {
   font-size: calc(10.5px * var(--font-scale));
   font-weight: 700;
@@ -1378,6 +1435,13 @@ body {
 .set-toggle-label {
   font-size: calc(12.5px * var(--font-scale));
   color: var(--ink);
+}
+
+.set-field-label {
+  display: block;
+  font-size: calc(12.5px * var(--font-scale));
+  color: var(--ink);
+  margin: 12px 0 6px;
 }
 
 .set-toggle .set-hint {

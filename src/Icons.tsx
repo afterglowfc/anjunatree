@@ -115,3 +115,16 @@ export function SproutIcon({ className }: IconProps) {
     </svg>
   )
 }
+
+/** A generic "opens elsewhere" glyph for links out to other services —
+ * deliberately not any service's own logo (see musicLinks.ts) so it never
+ * reads as branding or endorsement. */
+export function ExternalLinkIcon({ className }: IconProps) {
+  return (
+    <svg {...common} className={className}>
+      <path d="M6.5 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V9.5" />
+      <path d="M9 3h4v4" />
+      <path d="M13 3 7 9" />
+    </svg>
+  )
+}

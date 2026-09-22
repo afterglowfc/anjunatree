@@ -514,15 +514,6 @@ export default function App() {
                 updateFlow.dismiss()
                 setShowSettings(true)
               }}
-              onConnectSpotify={() => {
-                setInfoTab(null)
-                updateFlow.dismiss()
-                // Already connected: open Settings to show that, rather than
-                // silently restarting a login the listener already completed.
-                if (spotifyState.session || !spotify.isConfigured()) setShowSettings(true)
-                else spotify.beginLogin().catch(() => {})
-              }}
-              spotifyConnected={Boolean(spotifyState.session)}
             />
           </div>
 
@@ -674,6 +665,7 @@ export default function App() {
               onPickArtist={setConstellationId}
               onClose={() => selectNode(null)}
               spotify={spotifyState}
+              settings={settings}
             />
           )}
         </div>
@@ -683,7 +675,6 @@ export default function App() {
         <PlayerBar
           nowPlaying={nowPlaying}
           paused={playerPaused}
-          spotify={spotifyState}
           onPausedChange={setPlayerPaused}
           onEnded={handleTrackEnded}
           onJumpTo={() => selectNode(nowPlaying.node)}

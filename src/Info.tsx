@@ -23,18 +23,9 @@ interface Props {
   onOpen: (tab: InfoTab) => void
   onClose: () => void
   onOpenSettings: () => void
-  onConnectSpotify: () => void
-  spotifyConnected: boolean
 }
 
-export default function Info({
-  tab,
-  onOpen,
-  onClose,
-  onOpenSettings,
-  onConnectSpotify,
-  spotifyConnected,
-}: Props) {
+export default function Info({ tab, onOpen, onClose, onOpenSettings }: Props) {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -123,17 +114,19 @@ export default function Info({
                     <li>
                       <strong>Surprise Me</strong>, in the header, plays through the map for you.
                     </li>
+                    <li>
+                      <strong>Listen on</strong>, on any release, opens the full track in
+                      Spotify, Apple Music, or YouTube Music.
+                    </li>
                   </ul>
                   <div className="info-cta-row">
-                    <button className="set-button primary" onClick={onConnectSpotify}>
-                      {spotifyConnected ? '✓ Spotify connected' : 'Connect Spotify for full tracks'}
-                    </button>
-                    <button className="set-button" onClick={onOpenSettings}>
+                    <button className="set-button primary" onClick={onOpenSettings}>
                       Open Settings
                     </button>
                   </div>
                   <p className="set-hint">
-                    Settings also has themes, text size and accessibility options.
+                    Settings also has themes, text size, accessibility, and Spotify for
+                    your saved releases.
                   </p>
                 </>
               )}
@@ -225,7 +218,6 @@ export default function Info({
                     </a>
                   </div>
                   <ul className="set-hint" style={{ marginTop: 10 }}>
-                    <li>Full-track playback needs Spotify Premium, in Chrome, Edge or Safari.</li>
                     <li>If a preview won't load, it usually works on a second try.</li>
                   </ul>
                 </>
