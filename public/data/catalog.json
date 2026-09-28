@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-21T12:51:33.025Z",
+ "generatedAt": "2026-09-28T13:58:37.990Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -31234,6 +31234,25 @@
    ]
   },
   {
+   "id": "a7180386-4227-4160-b1b1-3d6fb11a6541",
+   "title": "Thing Called Love (Oliver Heldens remix)",
+   "artist": "Above & Beyond feat. Richard Bedford",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "6aa077a2-7234-4520-a02a-053633c82312"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Richard Bedford"
+   ],
+   "label": "anjunabeats",
+   "date": "2021-01-08",
+   "year": 2021,
+   "catno": "ANJ176RBD4",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "26a2e4b4-a10e-4f99-865d-c22ad83a1912",
    "title": "Love Theme",
    "artist": "Martin Roth",
@@ -50621,7 +50640,7 @@
   },
   {
    "id": "58a8a8d6-3738-4339-b104-43bb75785dda",
-   "title": "Bigger Than All of Us (extended mixes)",
+   "title": "Bigger Than All of Us",
    "artist": "Above & Beyond",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
@@ -50632,7 +50651,7 @@
    "label": "anjunabeats",
    "date": "2025-07-18",
    "year": 2025,
-   "catno": "ANJCD160BD",
+   "catno": "ANJCD160",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -55049,6 +55068,23 @@
    "secondaryTypes": [
     "Remix"
    ]
+  },
+  {
+   "id": "6fc2f12a-dd90-44d6-abbe-401b20079a60",
+   "title": "Found Our Way EP",
+   "artist": "Noé Solange",
+   "artistIds": [
+    "1d6ce654-37c2-43c5-bc84-7fde67efb63e"
+   ],
+   "artists": [
+    "Noé Solange"
+   ],
+   "label": "reflections",
+   "date": "2026-09-24",
+   "year": 2026,
+   "catno": "ANJCH077D",
+   "type": "EP",
+   "secondaryTypes": []
   },
   {
    "id": "91fa2480-69ab-41f6-bd4b-45b1420575dc",
