@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-28T13:58:37.990Z",
+ "generatedAt": "2026-10-05T14:43:20.892Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -31248,7 +31248,7 @@
    "label": "anjunabeats",
    "date": "2021-01-08",
    "year": 2021,
-   "catno": "ANJ176RBD4",
+   "catno": "ANJ176RD4",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -55104,6 +55104,40 @@
    "secondaryTypes": []
   },
   {
+   "id": "9bef7014-f54d-4751-a9cd-bfd35eab3266",
+   "title": "Sparklestar",
+   "artist": "Nicky Elisabeth",
+   "artistIds": [
+    "965a71e4-262c-4b5f-b14a-162c3c0b258b"
+   ],
+   "artists": [
+    "Nicky Elisabeth"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-09-29",
+   "year": 2026,
+   "catno": "ANJDEE1022OD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "7a7478a9-7b7d-4b50-9b2d-1f9ab88ec1bc",
+   "title": "Sparklestar",
+   "artist": "Nicky Elisabeth",
+   "artistIds": [
+    "965a71e4-262c-4b5f-b14a-162c3c0b258b"
+   ],
+   "artists": [
+    "Nicky Elisabeth"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-10-23",
+   "year": 2026,
+   "catno": null,
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
    "id": "65569967-8f37-422f-9af7-77a172777d0c",
    "title": "Because of Art",
    "artist": "Because of Art",
@@ -55133,7 +55167,7 @@
    "label": "reflections",
    "date": "2026-12-03",
    "year": 2026,
-   "catno": null,
+   "catno": "ANJCD176D",
    "type": "Album",
    "secondaryTypes": [
     "Compilation"
