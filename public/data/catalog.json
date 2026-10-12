@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-05T14:43:20.892Z",
+ "generatedAt": "2026-10-12T15:29:11.260Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -4899,6 +4899,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "20a1db4e-c48e-4f4c-8d5c-2b78551d9a7b",
+   "title": "If I Could Fly On The Surface",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2010-02-22",
+   "year": 2010,
+   "catno": null,
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "653db508-f03b-458b-aa38-b5540561d43c",
    "title": "If I Could Fly On The Surface (Alex M.O.R.P.H. remix) (Daniel Kandi mashup)",
    "artist": "Oceanlab v Mike Shiver",
@@ -4918,23 +4935,6 @@
    "secondaryTypes": [
     "Remix"
    ]
-  },
-  {
-   "id": "20a1db4e-c48e-4f4c-8d5c-2b78551d9a7b",
-   "title": "If I Could Fly On The Surface",
-   "artist": "Above & Beyond",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
-   ],
-   "artists": [
-    "Above & Beyond"
-   ],
-   "label": "anjunabeats",
-   "date": "2010-02-22",
-   "year": 2010,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
   },
   {
    "id": "442d3f40-ab85-4514-9aa9-1261410e289f",
@@ -7132,7 +7132,7 @@
    "label": "anjunabeats",
    "date": "2011-06-12",
    "year": 2011,
-   "catno": "ACD176",
+   "catno": "ANJ-176RD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -18686,7 +18686,7 @@
    "label": "anjunabeats",
    "date": "2017-10-20",
    "year": 2017,
-   "catno": "ANJ457BD",
+   "catno": "ANJ457D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -27305,6 +27305,27 @@
    ]
   },
   {
+   "id": "3c9b6b97-bf75-4389-b093-45d6b5d38f04",
+   "title": "Tokyo (Seven Lions remix)",
+   "artist": "3LAU feat. XIRA",
+   "artistIds": [
+    "6461d3e3-2886-4ad4-90c9-a43e3202ebaf",
+    "3c1caafe-87ed-4949-87b9-43ef74e40d4d"
+   ],
+   "artists": [
+    "3LAU",
+    "XIRA"
+   ],
+   "label": "anjunabeats",
+   "date": "2020-04-24",
+   "year": 2020,
+   "catno": "ANJ591RBD2",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
    "id": "39d23854-574e-48b9-90a5-caeb33cdcda3",
    "title": "Tokyo: The Remixes",
    "artist": "3LAU feat. XIRA",
@@ -27320,27 +27341,6 @@
    "date": "2020-04-24",
    "year": 2020,
    "catno": null,
-   "type": "Single",
-   "secondaryTypes": [
-    "Remix"
-   ]
-  },
-  {
-   "id": "3c9b6b97-bf75-4389-b093-45d6b5d38f04",
-   "title": "Tokyo (Seven Lions remix)",
-   "artist": "3LAU feat. XIRA",
-   "artistIds": [
-    "6461d3e3-2886-4ad4-90c9-a43e3202ebaf",
-    "3c1caafe-87ed-4949-87b9-43ef74e40d4d"
-   ],
-   "artists": [
-    "3LAU",
-    "XIRA"
-   ],
-   "label": "anjunabeats",
-   "date": "2020-04-24",
-   "year": 2020,
-   "catno": "ANJ591RD2",
    "type": "Single",
    "secondaryTypes": [
     "Remix"
@@ -29938,7 +29938,7 @@
    "label": "anjunabeats",
    "date": "2020-10-09",
    "year": 2020,
-   "catno": "ANJCD085",
+   "catno": "ANJCD085OD",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -50640,7 +50640,7 @@
   },
   {
    "id": "58a8a8d6-3738-4339-b104-43bb75785dda",
-   "title": "Bigger Than All of Us",
+   "title": "Bigger Than All of Us (extended mixes)",
    "artist": "Above & Beyond",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
@@ -50651,7 +50651,7 @@
    "label": "anjunabeats",
    "date": "2025-07-18",
    "year": 2025,
-   "catno": "ANJCD160",
+   "catno": "ANJCD160BD",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -55119,6 +55119,99 @@
    "catno": "ANJDEE1022OD",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "229495f2-4c1c-42f1-bb39-0e460b14d0d0",
+   "title": "Sky Falls Down (downtempo version)",
+   "artist": "Above & Beyond pres. OceanLab",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "a558ed3c-ab7d-49b8-a52d-14071b95fa4f"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "OceanLab"
+   ],
+   "label": "reflections",
+   "date": "2026-10-01",
+   "year": 2026,
+   "catno": "ANJCH079D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "a5c935a4-0708-466f-8a98-5392a95eeb08",
+   "title": "Solitude (Vár Sofandi rework)",
+   "artist": "Tontario feat. Lake Jons",
+   "artistIds": [
+    "f91bc1b4-1f0e-4043-bfcc-b9b7ec21d87b",
+    "c53647bc-8db2-41a4-905c-6214faf9feef"
+   ],
+   "artists": [
+    "Tontario",
+    "Lake Jons"
+   ],
+   "label": "reflections",
+   "date": "2026-10-01",
+   "year": 2026,
+   "catno": "ANJCH078D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "3d5c2007-cc4e-4fa9-a4ea-7d45cc72f849",
+   "title": "Neverending Summer EP",
+   "artist": "Ryan Davis",
+   "artistIds": [
+    "712ae275-fd42-41c6-a3ef-5645d8775ee5"
+   ],
+   "artists": [
+    "Ryan Davis"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-10-02",
+   "year": 2026,
+   "catno": "ANJDEE1023D",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "318b624a-37d5-4a3c-ac1f-9154d64d1e72",
+   "title": "Shift Focus",
+   "artist": "Because of Art feat. Blair",
+   "artistIds": [
+    "55bdc520-dc4f-4eaf-bede-5f47f3dcc939",
+    "36fa2a97-40ca-40db-a922-009db0cc88aa"
+   ],
+   "artists": [
+    "Because of Art",
+    "Blair"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-10-06",
+   "year": 2026,
+   "catno": "ANJDEE1024D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "72ac2891-5ffe-4742-ba4b-29b034a862df",
+   "title": "Lumiere (Remixed)",
+   "artist": "Planet of Souls",
+   "artistIds": [
+    "cee39ad3-a023-4ee5-b0f2-bc1b8d80af86"
+   ],
+   "artists": [
+    "Planet of Souls"
+   ],
+   "label": "reflections",
+   "date": "2026-10-08",
+   "year": 2026,
+   "catno": "ANJCD166RD",
+   "type": "Album",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "7a7478a9-7b7d-4b50-9b2d-1f9ab88ec1bc",
