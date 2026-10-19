@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T15:29:11.260Z",
+ "generatedAt": "2026-10-19T13:20:20.872Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -50640,7 +50640,7 @@
   },
   {
    "id": "58a8a8d6-3738-4339-b104-43bb75785dda",
-   "title": "Bigger Than All of Us (extended mixes)",
+   "title": "Bigger Than All of Us",
    "artist": "Above & Beyond",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
@@ -50651,7 +50651,7 @@
    "label": "anjunabeats",
    "date": "2025-07-18",
    "year": 2025,
-   "catno": "ANJCD160BD",
+   "catno": "ANJCD160",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -52143,6 +52143,23 @@
    "date": "2025-11-18",
    "year": 2025,
    "catno": "ANJDEE952D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "33cf2d8a-37bf-471f-8814-e87c395f05c6",
+   "title": "Tense",
+   "artist": "Farius",
+   "artistIds": [
+    "788e3323-a1db-4273-9309-6418e25be6bb"
+   ],
+   "artists": [
+    "Farius"
+   ],
+   "label": "anjunabeats",
+   "date": "2025-11-19",
+   "year": 2025,
+   "catno": "ANJ1048D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -55212,6 +55229,40 @@
    "secondaryTypes": [
     "Remix"
    ]
+  },
+  {
+   "id": "e87b446b-f8e1-4f7d-a104-fc3cb2d17eed",
+   "title": "Moonlight EP",
+   "artist": "Eric Luttrell",
+   "artistIds": [
+    "6d0da355-5366-4202-8096-e4e8cd1d50b4"
+   ],
+   "artists": [
+    "Eric Luttrell"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-10-09",
+   "year": 2026,
+   "catno": "ANJDEE1025D",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "f9007797-06ae-4206-a2c6-fe927435cb6c",
+   "title": "Nights Like This",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-10-15",
+   "year": 2026,
+   "catno": "ANJ1110BD",
+   "type": "Single",
+   "secondaryTypes": []
   },
   {
    "id": "7a7478a9-7b7d-4b50-9b2d-1f9ab88ec1bc",
