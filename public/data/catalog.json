@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-19T13:20:20.872Z",
+ "generatedAt": "2026-10-26T13:07:45.009Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -70,23 +70,6 @@
    "secondaryTypes": [
     "Remix"
    ]
-  },
-  {
-   "id": "79dbe813-b756-3f9f-ad4e-23a183ac1723",
-   "title": "Sun 2011: The Remixes",
-   "artist": "Slusnik Luna",
-   "artistIds": [
-    "1ab343f8-c747-4699-8b55-89ca1b3e9a9d"
-   ],
-   "artists": [
-    "Slusnik Luna"
-   ],
-   "label": "anjunabeats",
-   "date": "2001",
-   "year": 2001,
-   "catno": "ANJ195RD",
-   "type": "Single",
-   "secondaryTypes": []
   },
   {
    "id": "3cdf047d-11c2-3f2a-93eb-ebfa2d54eb88",
@@ -204,6 +187,23 @@
    "date": "2001-10-01",
    "year": 2001,
    "catno": "ADD008",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "79dbe813-b756-3f9f-ad4e-23a183ac1723",
+   "title": "Sun 2011: The Remixes",
+   "artist": "Slusnik Luna",
+   "artistIds": [
+    "1ab343f8-c747-4699-8b55-89ca1b3e9a9d"
+   ],
+   "artists": [
+    "Slusnik Luna"
+   ],
+   "label": "anjunabeats",
+   "date": "2001-10-15",
+   "year": 2001,
+   "catno": "ANJ195RD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -30554,6 +30554,23 @@
    ]
   },
   {
+   "id": "98cbe25d-aaa2-428c-8679-adfc2d95fceb",
+   "title": "Lailonie",
+   "artist": "Marsh",
+   "artistIds": [
+    "871501c5-0a49-443d-bfcb-076a1e56f689"
+   ],
+   "artists": [
+    "Marsh"
+   ],
+   "label": "anjunabeats",
+   "date": "2020-11-20",
+   "year": 2020,
+   "catno": "ANJCD090BD",
+   "type": "Album",
+   "secondaryTypes": []
+  },
+  {
    "id": "a8d31d98-83a2-4187-bb4e-b2342d144007",
    "title": "Where We Go From Here Pt. 1",
    "artist": "DT8 Project",
@@ -30568,23 +30585,6 @@
    "year": 2020,
    "catno": "ANJ665D",
    "type": "EP",
-   "secondaryTypes": []
-  },
-  {
-   "id": "98cbe25d-aaa2-428c-8679-adfc2d95fceb",
-   "title": "Lailonie",
-   "artist": "Marsh",
-   "artistIds": [
-    "871501c5-0a49-443d-bfcb-076a1e56f689"
-   ],
-   "artists": [
-    "Marsh"
-   ],
-   "label": "anjunadeep",
-   "date": "2020-11-20",
-   "year": 2020,
-   "catno": "ANJCD090D",
-   "type": "Album",
    "secondaryTypes": []
   },
   {
@@ -31878,6 +31878,25 @@
    "secondaryTypes": [
     "Remix"
    ]
+  },
+  {
+   "id": "2d077882-079b-4593-bd80-18c88f092e7b",
+   "title": "Open End Resource (OCULA Remix)",
+   "artist": "Andrew Bayer feat. Alison May",
+   "artistIds": [
+    "37457e92-471b-469e-ae6d-448fdbbd0109",
+    "ad57379d-457c-4172-91b0-53604071c5b4"
+   ],
+   "artists": [
+    "Andrew Bayer",
+    "Alison May"
+   ],
+   "label": "anjunabeats",
+   "date": "2021-02-22",
+   "year": 2021,
+   "catno": "ANJ518RBD1",
+   "type": "Single",
+   "secondaryTypes": []
   },
   {
    "id": "88d49f8f-c22e-4729-bb5d-8c5149771491",
@@ -37441,6 +37460,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "43709154-76d6-4c2e-8b8d-7d1984381ba6",
+   "title": "Immunity EP",
+   "artist": "Kasablanca",
+   "artistIds": [
+    "bdd47361-0508-497a-8c90-55d1de04bd38"
+   ],
+   "artists": [
+    "Kasablanca"
+   ],
+   "label": "anjunabeats",
+   "date": "2022-03-18",
+   "year": 2022,
+   "catno": "ANJ791BD",
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
    "id": "932567aa-cb41-4624-96f9-53650ba846c0",
    "title": "Machine Therapy (remixed)",
    "artist": "Alan Fitzpatrick",
@@ -37458,23 +37494,6 @@
    "secondaryTypes": [
     "Remix"
    ]
-  },
-  {
-   "id": "43709154-76d6-4c2e-8b8d-7d1984381ba6",
-   "title": "Immunity EP",
-   "artist": "Kasablanca",
-   "artistIds": [
-    "bdd47361-0508-497a-8c90-55d1de04bd38"
-   ],
-   "artists": [
-    "Kasablanca"
-   ],
-   "label": "anjunabeats",
-   "date": "2022-03-18",
-   "year": 2022,
-   "catno": "ANJ791BD",
-   "type": "EP",
-   "secondaryTypes": []
   },
   {
    "id": "ddad4816-791f-4497-9864-49fd169b6cfd",
@@ -54925,7 +54944,7 @@
    "date": "2026-09-01",
    "year": 2026,
    "catno": "ANJDEE1017D",
-   "type": "EP",
+   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -55260,9 +55279,32 @@
    "label": "anjunabeats",
    "date": "2026-10-15",
    "year": 2026,
-   "catno": "ANJ1110BD",
+   "catno": "ANJ1101D",
    "type": "Single",
    "secondaryTypes": []
+  },
+  {
+   "id": "a37310f5-93cf-4324-8385-2e6afaac6c09",
+   "title": "Kadhalan (Loverboy mix)",
+   "artist": "Dusky, Nadeem Karim & Pritt",
+   "artistIds": [
+    "9feea1d6-3e4e-4d3c-b84a-87a12f7cbf94",
+    "ffc19de3-a125-498e-ac7b-e58a89e28c5e",
+    "c341aea9-b529-4842-b3eb-2f28fdb6f3b7"
+   ],
+   "artists": [
+    "Dusky",
+    "Nadeem Karim",
+    "Pritt"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-10-16",
+   "year": 2026,
+   "catno": "ANJDEE1000ROD",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "7a7478a9-7b7d-4b50-9b2d-1f9ab88ec1bc",
