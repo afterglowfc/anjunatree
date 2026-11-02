@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-26T13:07:45.009Z",
+ "generatedAt": "2026-11-02T15:57:40.721Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -31881,7 +31881,7 @@
   },
   {
    "id": "2d077882-079b-4593-bd80-18c88f092e7b",
-   "title": "Open End Resource (OCULA Remix)",
+   "title": "Open End Resource (OCULA remix)",
    "artist": "Andrew Bayer feat. Alison May",
    "artistIds": [
     "37457e92-471b-469e-ae6d-448fdbbd0109",
@@ -36329,7 +36329,7 @@
    "label": "anjunabeats",
    "date": "2021-12-10",
    "year": 2021,
-   "catno": "ANJ196RD3",
+   "catno": "ANJ196RBD3",
    "type": "Single",
    "secondaryTypes": [
     "Remix"
@@ -37460,23 +37460,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "43709154-76d6-4c2e-8b8d-7d1984381ba6",
-   "title": "Immunity EP",
-   "artist": "Kasablanca",
-   "artistIds": [
-    "bdd47361-0508-497a-8c90-55d1de04bd38"
-   ],
-   "artists": [
-    "Kasablanca"
-   ],
-   "label": "anjunabeats",
-   "date": "2022-03-18",
-   "year": 2022,
-   "catno": "ANJ791BD",
-   "type": "EP",
-   "secondaryTypes": []
-  },
-  {
    "id": "932567aa-cb41-4624-96f9-53650ba846c0",
    "title": "Machine Therapy (remixed)",
    "artist": "Alan Fitzpatrick",
@@ -37494,6 +37477,23 @@
    "secondaryTypes": [
     "Remix"
    ]
+  },
+  {
+   "id": "43709154-76d6-4c2e-8b8d-7d1984381ba6",
+   "title": "Immunity EP",
+   "artist": "Kasablanca",
+   "artistIds": [
+    "bdd47361-0508-497a-8c90-55d1de04bd38"
+   ],
+   "artists": [
+    "Kasablanca"
+   ],
+   "label": "anjunabeats",
+   "date": "2022-03-18",
+   "year": 2022,
+   "catno": "ANJ791BD",
+   "type": "EP",
+   "secondaryTypes": []
   },
   {
    "id": "ddad4816-791f-4497-9864-49fd169b6cfd",
@@ -44126,6 +44126,27 @@
    "secondaryTypes": []
   },
   {
+   "id": "1ad89843-1d44-4d74-b5f7-b4a99115aff2",
+   "title": "Hurt You (AN21 mix)",
+   "artist": "anamē, AN21 & Lya Adams",
+   "artistIds": [
+    "c5295e52-a12f-47b4-88c0-7a20ebaf5dce",
+    "523bffec-7975-4a1a-b8d6-d11aefad16a6",
+    "3d0b0c07-476f-4792-a7ca-b8da9825cace"
+   ],
+   "artists": [
+    "anamē",
+    "AN21",
+    "Lya Adams"
+   ],
+   "label": "anjunabeats",
+   "date": "2023-11-01",
+   "year": 2023,
+   "catno": "ANJ921BD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "ac6e8d92-798a-4beb-ab3a-45748c81347a",
    "title": "Anjunabeats Worldwide 11",
    "artist": "Alex Sonata & TheRio",
@@ -50215,7 +50236,7 @@
    "label": "anjunadeep",
    "date": "2025-05-30",
    "year": 2025,
-   "catno": "ANJDEE922BD",
+   "catno": "ANJDEE922D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -51587,7 +51608,7 @@
   },
   {
    "id": "7dca863f-1148-4651-97ce-4814cbffbd96",
-   "title": "This Town (Club Mix)",
+   "title": "This Town (club mix)",
    "artist": "Ilan Bluestone with Giuseppe de Luca",
    "artistIds": [
     "d313ecf6-9256-41cd-9923-82f7a510357c",
@@ -52526,7 +52547,7 @@
    "label": "anjunabeats",
    "date": "2025-12-15",
    "year": 2025,
-   "catno": "ANJCDCO341OD",
+   "catno": "ANJCDCO341BD",
    "type": "Album",
    "secondaryTypes": [
     "Compilation"
@@ -53433,25 +53454,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "943f4255-6da8-4a80-89b5-22da874aabac",
-   "title": "Attraction (Marsh’s Mix)",
-   "artist": "Marsh & Ferry Corsten",
-   "artistIds": [
-    "871501c5-0a49-443d-bfcb-076a1e56f689",
-    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
-   ],
-   "artists": [
-    "Marsh",
-    "Ferry Corsten"
-   ],
-   "label": "anjunadeep",
-   "date": "2026-03-24",
-   "year": 2026,
-   "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "f0022f63-56aa-49e2-a06d-5b1ae3b3ce97",
    "title": "Attraction",
    "artist": "Marsh & Ferry Corsten",
@@ -53467,6 +53469,25 @@
    "date": "2026-03-24",
    "year": 2026,
    "catno": "ANJDEE974BD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "943f4255-6da8-4a80-89b5-22da874aabac",
+   "title": "Attraction (Marsh’s Mix)",
+   "artist": "Marsh & Ferry Corsten",
+   "artistIds": [
+    "871501c5-0a49-443d-bfcb-076a1e56f689",
+    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
+   ],
+   "artists": [
+    "Marsh",
+    "Ferry Corsten"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-03-24",
+   "year": 2026,
+   "catno": null,
    "type": "Single",
    "secondaryTypes": []
   },
@@ -55087,6 +55108,25 @@
    ]
   },
   {
+   "id": "ea3d3ee9-3940-4c80-a3c7-6cf4ef5646ff",
+   "title": "Group Therapy 700 Live from The Gorge Amphitheatre (DJ Mix)",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-09-18",
+   "year": 2026,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "DJ-mix"
+   ]
+  },
+  {
    "id": "aadc6c45-33de-4297-a187-ebda360876c7",
    "title": "Variation (vi) (Chihei Hatakeyama remix)",
    "artist": "Mark Barrott",
@@ -55138,6 +55178,25 @@
    "catno": "ANJCD175OD",
    "type": "Album",
    "secondaryTypes": []
+  },
+  {
+   "id": "35e1f8c7-31f9-4238-a658-e414bcbc118b",
+   "title": "Group Therapy 700 Live from The Gorge Amphitheatre - Deep Set (DJ Mix)",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-09-28",
+   "year": 2026,
+   "catno": null,
+   "type": "Album",
+   "secondaryTypes": [
+    "DJ-mix"
+   ]
   },
   {
    "id": "9bef7014-f54d-4751-a9cd-bfd35eab3266",
@@ -55307,6 +55366,25 @@
    ]
   },
   {
+   "id": "c638518e-eb6c-4f7d-b0bc-7616ed92e022",
+   "title": "Atlantic (ambient revisit)",
+   "artist": "Jaytech",
+   "artistIds": [
+    "61f0f467-bdd1-48fa-90aa-a23bb0093fca"
+   ],
+   "artists": [
+    "Jaytech"
+   ],
+   "label": "reflections",
+   "date": "2026-10-22",
+   "year": 2026,
+   "catno": "ANJCH080D",
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
    "id": "7a7478a9-7b7d-4b50-9b2d-1f9ab88ec1bc",
    "title": "Sparklestar",
    "artist": "Nicky Elisabeth",
@@ -55320,6 +55398,23 @@
    "date": "2026-10-23",
    "year": 2026,
    "catno": null,
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "7e14bb46-24e1-466b-a7aa-59909291bb45",
+   "title": "Footnotes",
+   "artist": "obli",
+   "artistIds": [
+    "f0c4d858-77a0-44a0-adcf-15c8d1a83a3d"
+   ],
+   "artists": [
+    "obli"
+   ],
+   "label": "reflections",
+   "date": "2026-10-29",
+   "year": 2026,
+   "catno": "ANJCH081D",
    "type": "EP",
    "secondaryTypes": []
   },
