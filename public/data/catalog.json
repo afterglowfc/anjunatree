@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-02T15:57:40.721Z",
+ "generatedAt": "2026-11-09T16:23:39.058Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -27305,27 +27305,6 @@
    ]
   },
   {
-   "id": "3c9b6b97-bf75-4389-b093-45d6b5d38f04",
-   "title": "Tokyo (Seven Lions remix)",
-   "artist": "3LAU feat. XIRA",
-   "artistIds": [
-    "6461d3e3-2886-4ad4-90c9-a43e3202ebaf",
-    "3c1caafe-87ed-4949-87b9-43ef74e40d4d"
-   ],
-   "artists": [
-    "3LAU",
-    "XIRA"
-   ],
-   "label": "anjunabeats",
-   "date": "2020-04-24",
-   "year": 2020,
-   "catno": "ANJ591RBD2",
-   "type": "Single",
-   "secondaryTypes": [
-    "Remix"
-   ]
-  },
-  {
    "id": "39d23854-574e-48b9-90a5-caeb33cdcda3",
    "title": "Tokyo: The Remixes",
    "artist": "3LAU feat. XIRA",
@@ -27341,6 +27320,27 @@
    "date": "2020-04-24",
    "year": 2020,
    "catno": null,
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
+   "id": "3c9b6b97-bf75-4389-b093-45d6b5d38f04",
+   "title": "Tokyo (Seven Lions remix)",
+   "artist": "3LAU feat. XIRA",
+   "artistIds": [
+    "6461d3e3-2886-4ad4-90c9-a43e3202ebaf",
+    "3c1caafe-87ed-4949-87b9-43ef74e40d4d"
+   ],
+   "artists": [
+    "3LAU",
+    "XIRA"
+   ],
+   "label": "anjunabeats",
+   "date": "2020-04-24",
+   "year": 2020,
+   "catno": "ANJ591RD2",
    "type": "Single",
    "secondaryTypes": [
     "Remix"
@@ -29938,7 +29938,7 @@
    "label": "anjunabeats",
    "date": "2020-10-09",
    "year": 2020,
-   "catno": "ANJCD085OD",
+   "catno": "ANJCD085",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -36931,6 +36931,25 @@
    "secondaryTypes": []
   },
   {
+   "id": "aadc1181-209c-4569-89cd-c252c07ec6e4",
+   "title": "Moon",
+   "artist": "Myon & Alissa Feudo",
+   "artistIds": [
+    "06e9bfcf-b9e3-4ce8-9502-fbb4167fe83f",
+    "5edbc6f0-cb4c-40f6-b121-1da38a4acb33"
+   ],
+   "artists": [
+    "Mÿon",
+    "Alissa Feudo"
+   ],
+   "label": "anjunabeats",
+   "date": "2022-02-04",
+   "year": 2022,
+   "catno": null,
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "51038ab7-f9ee-4898-8c5b-01eb3fd8c042",
    "title": "Moon",
    "artist": "Myon feat. Alissa Feudo",
@@ -40082,6 +40101,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "2c1be839-608d-4214-b423-0888f3a17ca5",
+   "title": "On Fire EP",
+   "artist": "Rezident",
+   "artistIds": [
+    "62db9736-d677-4ab8-8aa9-59b51ab3b3f2"
+   ],
+   "artists": [
+    "Rezident"
+   ],
+   "label": "anjunadeep",
+   "date": "2022-09-27",
+   "year": 2022,
+   "catno": null,
+   "type": "Other",
+   "secondaryTypes": []
+  },
+  {
    "id": "ca7f6e52-5995-43b5-9e53-3e315800adca",
    "title": "Crossroads / Terra Nuova",
    "artist": "Vintage & Morelli",
@@ -42982,8 +43018,8 @@
    ]
   },
   {
-   "id": "d9b2fa25-9665-4f0d-b900-e0f44c427680",
-   "title": "Anjunadeep presents 'Progressive Gems'",
+   "id": "20189f53-2ec4-43e3-af83-32cbf970721e",
+   "title": "Anjunadeep presents 'Late Night Cuts'",
    "artist": "Various Artists",
    "artistIds": [
     "89ad4ac3-39f7-470e-963a-56509c546377"
@@ -43001,8 +43037,8 @@
    ]
   },
   {
-   "id": "20189f53-2ec4-43e3-af83-32cbf970721e",
-   "title": "Anjunadeep presents 'Late Night Cuts'",
+   "id": "d9b2fa25-9665-4f0d-b900-e0f44c427680",
+   "title": "Anjunadeep presents 'Progressive Gems'",
    "artist": "Various Artists",
    "artistIds": [
     "89ad4ac3-39f7-470e-963a-56509c546377"
@@ -43825,6 +43861,29 @@
    "year": 2023,
    "catno": "ANJ916D",
    "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "6b324bde-9409-4138-8ceb-29ab907f9796",
+   "title": "Tears of the Kingdom",
+   "artist": "Giuseppe Ottaviani x Alex Sonata & TheRio feat. Tishmal",
+   "artistIds": [
+    "d7324881-11bf-4aa1-a394-34c1838c7baa",
+    "43cc956b-9f07-4b6b-bd80-504cf19b5f8f",
+    "baaa19af-773f-4a9b-8d1d-62fb90518d0a",
+    "14a0af9a-0939-40a4-aac2-157bb76bbc0c"
+   ],
+   "artists": [
+    "Giuseppe Ottaviani",
+    "Alex Sonata",
+    "TheRio",
+    "Tishmal"
+   ],
+   "label": "anjunabeats",
+   "date": "2023-09-29",
+   "year": 2023,
+   "catno": "ANJ916BD",
+   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -47236,6 +47295,25 @@
    "catno": "ANJEXP009",
    "type": "EP",
    "secondaryTypes": []
+  },
+  {
+   "id": "5a522047-0f4b-4fdc-a73f-c94115816145",
+   "title": "YOU.ME.NOW (Remixes Vol. 2)",
+   "artist": "Genix",
+   "artistIds": [
+    "31c6d968-a90e-4034-9c52-c4f91a92ed00"
+   ],
+   "artists": [
+    "Genix"
+   ],
+   "label": "anjunabeats",
+   "date": "2024-09-16",
+   "year": 2024,
+   "catno": "ANJCD143RBD2",
+   "type": "EP",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "0271aefb-2709-4e9a-a5f1-39288c24a86e",
@@ -52547,7 +52625,7 @@
    "label": "anjunabeats",
    "date": "2025-12-15",
    "year": 2025,
-   "catno": "ANJCDCO341BD",
+   "catno": "ANJCDCO341OD",
    "type": "Album",
    "secondaryTypes": [
     "Compilation"
@@ -53454,25 +53532,6 @@
    "secondaryTypes": []
   },
   {
-   "id": "f0022f63-56aa-49e2-a06d-5b1ae3b3ce97",
-   "title": "Attraction",
-   "artist": "Marsh & Ferry Corsten",
-   "artistIds": [
-    "871501c5-0a49-443d-bfcb-076a1e56f689",
-    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
-   ],
-   "artists": [
-    "Marsh",
-    "Ferry Corsten"
-   ],
-   "label": "anjunadeep",
-   "date": "2026-03-24",
-   "year": 2026,
-   "catno": "ANJDEE974BD",
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
    "id": "943f4255-6da8-4a80-89b5-22da874aabac",
    "title": "Attraction (Marsh’s Mix)",
    "artist": "Marsh & Ferry Corsten",
@@ -53488,6 +53547,25 @@
    "date": "2026-03-24",
    "year": 2026,
    "catno": null,
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "f0022f63-56aa-49e2-a06d-5b1ae3b3ce97",
+   "title": "Attraction",
+   "artist": "Marsh & Ferry Corsten",
+   "artistIds": [
+    "871501c5-0a49-443d-bfcb-076a1e56f689",
+    "47347cb8-ac34-4916-84b6-d85d4e5e5384"
+   ],
+   "artists": [
+    "Marsh",
+    "Ferry Corsten"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-03-24",
+   "year": 2026,
+   "catno": "ANJDEE974BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -55163,6 +55241,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "3224f762-260a-4639-add8-183cbb70e874",
+   "title": "Helsinki Scorchin' 20",
+   "artist": "Super8 & Tab",
+   "artistIds": [
+    "c54d9d94-e94f-4d8d-850d-1c314bd4ee15"
+   ],
+   "artists": [
+    "Super8 & Tab"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-09-25",
+   "year": 2026,
+   "catno": "ANJ057ROD",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "91fa2480-69ab-41f6-bd4b-45b1420575dc",
    "title": "Signals",
    "artist": "Dusky",
@@ -55416,6 +55511,42 @@
    "year": 2026,
    "catno": "ANJCH081D",
    "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "4f3318f7-bb05-4f25-9114-ef7476142dc7",
+   "title": "Stay With Me",
+   "artist": "Grum",
+   "artistIds": [
+    "ec4a9bed-1a6e-4b74-ac3e-53bbcea1bb94"
+   ],
+   "artists": [
+    "Grum"
+   ],
+   "label": "anjunabeats",
+   "date": "2026-10-30",
+   "year": 2026,
+   "catno": "ANJ1103D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "d476e9f9-53b7-4f52-8b31-5222a39fe2bf",
+   "title": "Asman",
+   "artist": "Anyasa feat. Samad Khan",
+   "artistIds": [
+    "9e6ca991-619e-4862-9b89-640d27fb5fcc",
+    "6fcecb9e-2d92-4eb9-b346-ab2d69abb49d"
+   ],
+   "artists": [
+    "Anyasa",
+    "Samad Khan"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-11-03",
+   "year": 2026,
+   "catno": "ANJDEE1031OD",
+   "type": "Single",
    "secondaryTypes": []
   },
   {
