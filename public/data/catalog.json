@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-09T16:23:39.058Z",
+ "generatedAt": "2026-11-16T15:51:24.601Z",
  "releases": [
   {
    "id": "d3ee25a5-6d84-38dc-bc77-fc387f558f39",
@@ -16783,6 +16783,23 @@
    "secondaryTypes": []
   },
   {
+   "id": "1c2f70d4-6272-400b-9b4f-ed2edf16dca7",
+   "title": "Surge",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2017",
+   "year": 2017,
+   "catno": "ANJ431D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "cd26b5c9-c8e9-4335-861b-b42186e736a5",
    "title": "Higher Love",
    "artist": "Seven Lions & Jason Ross feat. Paul Meany",
@@ -17185,7 +17202,7 @@
    "label": "anjunabeats",
    "date": "2017-03-10",
    "year": 2017,
-   "catno": null,
+   "catno": "ANJ423BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -17689,7 +17706,7 @@
    "label": "anjunabeats",
    "date": "2017-05-12",
    "year": 2017,
-   "catno": null,
+   "catno": "ANJ435BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -18806,6 +18823,25 @@
    "secondaryTypes": [
     "DJ-mix"
    ]
+  },
+  {
+   "id": "43b5bca9-2fff-4e08-9dbc-d4b0af674327",
+   "title": "Northern Soul",
+   "artist": "Above & Beyond feat. Richard Bedford",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "6aa077a2-7234-4520-a02a-053633c82312"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Richard Bedford"
+   ],
+   "label": "anjunabeats",
+   "date": "2017-11-03",
+   "year": 2017,
+   "catno": "ANJ459BD",
+   "type": "Single",
+   "secondaryTypes": []
   },
   {
    "id": "44b8f072-b50a-4949-a680-384a16968598",
@@ -19989,7 +20025,7 @@
    "label": "anjunabeats",
    "date": "2018-03-16",
    "year": 2018,
-   "catno": null,
+   "catno": "ANJ475BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -22068,7 +22104,7 @@
    "label": "anjunabeats",
    "date": "2018-10-05",
    "year": 2018,
-   "catno": "ANJ 514RD",
+   "catno": "ANJ514BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -22525,6 +22561,27 @@
    "secondaryTypes": [
     "Compilation"
    ]
+  },
+  {
+   "id": "cddcd3e1-72fb-437f-8e60-a61bd7fd5a22",
+   "title": "Long Way From Home",
+   "artist": "Above & Beyond and Spencer Brown feat. RBBTS",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "872daf79-9dca-4853-89f7-f1f1899153dc",
+    "f2e6f8da-2968-460a-b597-fcc4350e192a"
+   ],
+   "artists": [
+    "Above & Beyond",
+    "Spencer Brown",
+    "RBBTS"
+   ],
+   "label": "anjunabeats",
+   "date": "2018-11-30",
+   "year": 2018,
+   "catno": "ANJ524BD",
+   "type": "Single",
+   "secondaryTypes": []
   },
   {
    "id": "ef7b55b5-dea4-49c0-8af2-a2f2702e869b",
@@ -24286,7 +24343,7 @@
   },
   {
    "id": "8e035641-4e37-4d53-aab8-8601e5436483",
-   "title": "See The End (Avoure Remix)",
+   "title": "See the End",
    "artist": "Above & Beyond & Seven Lions feat. Opposite The Other",
    "artistIds": [
     "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
@@ -24301,7 +24358,7 @@
    "label": "anjunabeats",
    "date": "2019-07-26",
    "year": 2019,
-   "catno": "ANJ563RD2",
+   "catno": "ANJ563BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -24627,7 +24684,7 @@
    "label": "anjunabeats",
    "date": "2019-08-23",
    "year": 2019,
-   "catno": "ANJ569D",
+   "catno": "ANJ569BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -25601,7 +25658,7 @@
    "label": "anjunabeats",
    "date": "2019-11-22",
    "year": 2019,
-   "catno": null,
+   "catno": "ANJ588BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -26967,17 +27024,19 @@
   {
    "id": "5f67b452-88fe-413a-b4aa-2604ad7e93fe",
    "title": "Bittersweet & Blue",
-   "artist": "Above & Beyond",
+   "artist": "Above & Beyond feat. Richard Bedford",
    "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
+    "6aa077a2-7234-4520-a02a-053633c82312"
    ],
    "artists": [
-    "Above & Beyond"
+    "Above & Beyond",
+    "Richard Bedford"
    ],
    "label": "anjunabeats",
    "date": "2020-03-27",
    "year": 2020,
-   "catno": null,
+   "catno": "ANJ612BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -28413,7 +28472,7 @@
    "label": "anjunabeats",
    "date": "2020-07-15",
    "year": 2020,
-   "catno": "ANJ635D",
+   "catno": "ANJ635BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -29904,7 +29963,7 @@
    "label": "anjunabeats",
    "date": "2020-10-07",
    "year": 2020,
-   "catno": "ANJ657D",
+   "catno": "ANJ657BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -29938,7 +29997,7 @@
    "label": "anjunabeats",
    "date": "2020-10-09",
    "year": 2020,
-   "catno": "ANJCD085",
+   "catno": "ANJCD085OD",
    "type": "Album",
    "secondaryTypes": []
   },
@@ -30751,27 +30810,6 @@
    "date": "2020-11-27",
    "year": 2020,
    "catno": "ANJDEE544D",
-   "type": "Single",
-   "secondaryTypes": []
-  },
-  {
-   "id": "cddcd3e1-72fb-437f-8e60-a61bd7fd5a22",
-   "title": "Long Way From Home",
-   "artist": "Above & Beyond and Spencer Brown feat. RBBTS",
-   "artistIds": [
-    "370bd5a3-4abf-4356-8576-3a8fc0c11d65",
-    "872daf79-9dca-4853-89f7-f1f1899153dc",
-    "f2e6f8da-2968-460a-b597-fcc4350e192a"
-   ],
-   "artists": [
-    "Above & Beyond",
-    "Spencer Brown",
-    "RBBTS"
-   ],
-   "label": "anjunabeats",
-   "date": "2020-11-30",
-   "year": 2020,
-   "catno": "ANJ524D",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -34749,6 +34787,25 @@
    "secondaryTypes": []
   },
   {
+   "id": "6cda6275-6f21-4f83-9fda-83ddc2f391de",
+   "title": "1995 (Simon Doty Mixes)",
+   "artist": "gardenstate",
+   "artistIds": [
+    "c643be72-7716-4b18-8708-0d254d24020a"
+   ],
+   "artists": [
+    "gardenstate"
+   ],
+   "label": "anjunabeats",
+   "date": "2021-08-25",
+   "year": 2021,
+   "catno": "ANJ736RBD",
+   "type": "EP",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
    "id": "decd9f89-fc67-456d-a0d4-34671d943758",
    "title": "1995",
    "artist": "gardenstate",
@@ -34764,25 +34821,6 @@
    "catno": "ANJ736D",
    "type": "Single",
    "secondaryTypes": []
-  },
-  {
-   "id": "6cda6275-6f21-4f83-9fda-83ddc2f391de",
-   "title": "1995",
-   "artist": "Gardenstate",
-   "artistIds": [
-    "c643be72-7716-4b18-8708-0d254d24020a"
-   ],
-   "artists": [
-    "gardenstate"
-   ],
-   "label": "anjunabeats",
-   "date": "2021-08-25",
-   "year": 2021,
-   "catno": "ANJ736BD",
-   "type": "EP",
-   "secondaryTypes": [
-    "Remix"
-   ]
   },
   {
    "id": "d3749ae8-fdcd-4f4d-ab89-f04ce9d028b0",
@@ -36208,6 +36246,23 @@
    "year": 2021,
    "catno": "ANJDEE658D1",
    "type": "EP",
+   "secondaryTypes": []
+  },
+  {
+   "id": "ddf3d0d6-25f4-4ecc-ac4c-8e3baa91bf2f",
+   "title": "Screwdriver",
+   "artist": "Above & Beyond",
+   "artistIds": [
+    "370bd5a3-4abf-4356-8576-3a8fc0c11d65"
+   ],
+   "artists": [
+    "Above & Beyond"
+   ],
+   "label": "anjunabeats",
+   "date": "2021-12-03",
+   "year": 2021,
+   "catno": "ANJ767BD",
+   "type": "Single",
    "secondaryTypes": []
   },
   {
@@ -41335,6 +41390,25 @@
    ]
   },
   {
+   "id": "949a833c-3d83-413e-a910-1bb868b2fa80",
+   "title": "Kili EP",
+   "artist": "Romain Garcia & Douran",
+   "artistIds": [
+    "32c1c2f5-b510-4b57-bdf9-e0a3d7c79857",
+    "f34d419a-8418-43eb-afdf-5d13139042a4"
+   ],
+   "artists": [
+    "Romain Garcia",
+    "Douran"
+   ],
+   "label": "anjunadeep",
+   "date": "2023",
+   "year": 2023,
+   "catno": null,
+   "type": "EP",
+   "secondaryTypes": []
+  },
+  {
    "id": "f49ade62-3ed1-422c-879e-53c268a98bee",
    "title": "Passion",
    "artist": "SØNIN & Oliver Smith",
@@ -43762,7 +43836,7 @@
    "label": "anjunabeats",
    "date": "2023-09-22",
    "year": 2023,
-   "catno": null,
+   "catno": "ANJ909BD",
    "type": "Single",
    "secondaryTypes": []
   },
@@ -46776,7 +46850,7 @@
    "label": "anjunabeats",
    "date": "2024-07-30",
    "year": 2024,
-   "catno": "ANJCDCO293OD",
+   "catno": "ANJCDCO293BD",
    "type": "Album",
    "secondaryTypes": [
     "Compilation",
@@ -47974,8 +48048,10 @@
    "date": "2024-11-11",
    "year": 2024,
    "catno": null,
-   "type": "Single",
-   "secondaryTypes": []
+   "type": "EP",
+   "secondaryTypes": [
+    "Remix"
+   ]
   },
   {
    "id": "cb771d37-e1fe-4e49-bdb2-8a55143a0c35",
@@ -55550,6 +55626,59 @@
    "secondaryTypes": []
   },
   {
+   "id": "538848ec-be37-4895-adf9-8faf8bb847e0",
+   "title": "Elm (Lost a Shoe in 92 mix)",
+   "artist": "Dusky",
+   "artistIds": [
+    "9feea1d6-3e4e-4d3c-b84a-87a12f7cbf94"
+   ],
+   "artists": [
+    "Dusky"
+   ],
+   "label": "anjunadeep",
+   "date": "2026-11-06",
+   "year": 2026,
+   "catno": null,
+   "type": "Single",
+   "secondaryTypes": [
+    "Remix"
+   ]
+  },
+  {
+   "id": "6cd52ead-e76f-4df3-8695-40c376048bbb",
+   "title": "Sky",
+   "artist": "Ardisia",
+   "artistIds": [
+    "ff94931a-c9b2-4294-b20a-e453d27ffba0"
+   ],
+   "artists": [
+    "Ardisia"
+   ],
+   "label": "reflections",
+   "date": "2026-11-09",
+   "year": 2026,
+   "catno": "ANJCH082D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
+   "id": "e0d8b14b-ee77-42f8-8dc9-b515642ea30f",
+   "title": "Amsterdam (Above & Beyond’s downtempo version)",
+   "artist": "Luminary",
+   "artistIds": [
+    "6026ad9e-35b8-48ef-912b-49ac6eec7ac0"
+   ],
+   "artists": [
+    "Luminary"
+   ],
+   "label": "reflections",
+   "date": "2026-11-12",
+   "year": 2026,
+   "catno": "ANJCH083D",
+   "type": "Single",
+   "secondaryTypes": []
+  },
+  {
    "id": "65569967-8f37-422f-9af7-77a172777d0c",
    "title": "Because of Art",
    "artist": "Because of Art",
@@ -55564,6 +55693,23 @@
    "year": 2026,
    "catno": "ANJLP174",
    "type": "Album",
+   "secondaryTypes": []
+  },
+  {
+   "id": "982dae61-932f-4e1f-ba6f-d7ad2a4680a2",
+   "title": "Supercluster EP",
+   "artist": "Ardisia",
+   "artistIds": [
+    "ff94931a-c9b2-4294-b20a-e453d27ffba0"
+   ],
+   "artists": [
+    "Ardisia"
+   ],
+   "label": "reflections",
+   "date": "2026-11-30",
+   "year": 2026,
+   "catno": null,
+   "type": "EP",
    "secondaryTypes": []
   },
   {
